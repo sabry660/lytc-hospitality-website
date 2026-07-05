@@ -98,7 +98,6 @@ Create a `.env` file in the root directory to configure environment-specific var
 
 For inquiries and support:
 - WhatsApp: +20 107 085 3978
-- Website: https://lytc.com
 
 ## License
 
