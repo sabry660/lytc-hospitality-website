@@ -81,7 +81,7 @@ export default function CustomCursor() {
 
       {/* Outer Interpolated Ring with Contextual States */}
       <motion.div
-        className="fixed top-0 left-0 rounded-full border border-gold/40 pointer-events-none z-[10999] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center font-sans text-[8px] text-black font-bold uppercase tracking-widest bg-transparent select-none"
+        className="fixed top-0 left-0 rounded-full border border-gold/40 pointer-events-none z-[10999] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center font-primary text-[8px] text-black font-bold uppercase tracking-widest bg-transparent select-none"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,

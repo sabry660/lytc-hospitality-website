@@ -17,10 +17,10 @@ export default function AboutLYTC() {
           {/* Text Content Block */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-3">
-              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold font-bold">
+              <span className="font-primary text-[10px] uppercase tracking-[0.25em] text-gold font-bold">
                 تغيير قواعد اللعبة في الضيافة الفاخرة
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+              <h2 className="font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
                 لسنا شركة تصميم مواقع... <br />
                 <span className="italic font-normal text-gold">نحن شريك النمو الرقمي للفنادق.</span>
               </h2>
@@ -35,7 +35,7 @@ export default function AboutLYTC() {
                 <div className="p-2 rounded-lg bg-gold/5 text-gold border border-gold/15 w-fit">
                   <TrendingUp size={16} />
                 </div>
-                <h4 className="font-serif text-base font-semibold text-ivory">مضاعفة الأرباح المباشرة</h4>
+                <h4 className="font-primary text-base font-semibold text-ivory">مضاعفة الأرباح المباشرة</h4>
                 <p className="text-xs text-ivory/50 leading-relaxed">
                   نعيد توجيه الحجوزات السائبة من عمولات المنصات الخارجية لتصبح حجوزات مباشرة في خزينة فندقك وبمعدل توفير فوري.
                 </p>
@@ -45,7 +45,7 @@ export default function AboutLYTC() {
                 <div className="p-2 rounded-lg bg-gold/5 text-gold border border-gold/15 w-fit">
                   <Sparkles size={16} />
                 </div>
-                <h4 className="font-serif text-base font-semibold text-ivory">إثراء تجربة الضيف الرقمية</h4>
+                <h4 className="font-primary text-base font-semibold text-ivory">إثراء تجربة الضيف الرقمية</h4>
                 <p className="text-xs text-ivory/50 leading-relaxed">
                   نصمم بوابات تمنح النزيل تحكماً ملكياً كاملاً وسريعاً في الخدمات والوجبات دون أي تعقيد تشغيلي أو الحاجة لتنزيل تطبيقات.
                 </p>
@@ -55,7 +55,7 @@ export default function AboutLYTC() {
                 <div className="p-2 rounded-lg bg-gold/5 text-gold border border-gold/15 w-fit">
                   <ShieldCheck size={16} />
                 </div>
-                <h4 className="font-serif text-base font-semibold text-ivory">أتمتة وتسهيل العمليات</h4>
+                <h4 className="font-primary text-base font-semibold text-ivory">أتمتة وتسهيل العمليات</h4>
                 <p className="text-xs text-ivory/50 leading-relaxed">
                   نحرر موظفي الاستقبال من فوضى الاتصالات المكررة من خلال لوحة تحكم ذكية توزع الطلبات الفندقية تلقائياً وبلحظية.
                 </p>
@@ -65,7 +65,7 @@ export default function AboutLYTC() {
                 <div className="p-2 rounded-lg bg-gold/5 text-gold border border-gold/15 w-fit">
                   <Users size={16} />
                 </div>
-                <h4 className="font-serif text-base font-semibold text-ivory">صناعة هويات رقمية سيادية</h4>
+                <h4 className="font-primary text-base font-semibold text-ivory">صناعة هويات رقمية سيادية</h4>
                 <p className="text-xs text-ivory/50 leading-relaxed">
                   نحفر لعلامتك الفندقية مكاناً مرموقاً يتصدر نتائج البحث وخرائط جوجل ليصبح خيار الإقامة الأول بلا منازع.
                 </p>
@@ -88,9 +88,9 @@ export default function AboutLYTC() {
               <div className="absolute bottom-6 left-6 right-6 p-5 rounded-xl border border-white/10 bg-black/80 backdrop-blur-md text-right space-y-1">
                 <div className="flex items-center gap-1.5 text-gold">
                   <Star size={12} className="fill-gold text-gold" />
-                  <span className="font-mono text-[9px] uppercase tracking-wider font-semibold">تأثير ملموس على الميزانية</span>
+                  <span className="font-primary text-[9px] uppercase tracking-wider font-semibold">تأثير ملموس على الميزانية</span>
                 </div>
-                <p className="font-serif text-sm font-semibold text-white">
+                <p className="font-primary text-sm font-semibold text-white">
                   "التصميم الفاخر الخاطف للأنفاس لا يعني شيئاً إن لم يولد حجوزات مباشرة في خزينة فندقك."
                 </p>
               </div>

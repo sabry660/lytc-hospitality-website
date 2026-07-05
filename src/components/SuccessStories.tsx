@@ -37,7 +37,7 @@ export default function SuccessStories() {
   const current = CASE_STUDIES[currentIndex];
 
   return (
-    <section className="bg-dark-bg py-24 text-ivory border-t border-white/5 font-sans relative overflow-hidden" id="success-stories">
+    <section className="bg-dark-bg py-24 text-ivory border-t border-white/5 font-primary relative overflow-hidden" id="success-stories">
       
       {/* Background ambient golden aura */}
       <div className="absolute top-1/4 left-0 h-[300px] w-[300px] rounded-full bg-gold/5 blur-[100px] pointer-events-none" />
@@ -49,11 +49,11 @@ export default function SuccessStories() {
           <div className="max-w-xl text-right">
             <div className="flex items-center gap-2 text-gold justify-start flex-row-reverse text-right">
               <Trophy size={14} className="text-gold animate-drift" />
-              <span className="font-mono text-[10px] uppercase tracking-widest font-bold">محفظة نجاح شركائنا في الخليج</span>
+              <span className="font-primary text-[10px] uppercase tracking-widest font-bold">محفظة نجاح شركائنا في الخليج</span>
             </div>
             <CinematicTitle
               text="شراكات حقيقية لمواجهة هيمنة المنصات"
-              className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight text-white inline-block text-right w-full"
+              className="mt-4 font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight text-white inline-block text-right w-full"
             />
           </div>
 
@@ -114,7 +114,7 @@ export default function SuccessStories() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-40" />
                   
-                  <div className="absolute top-4 right-4 rounded-full bg-black/75 backdrop-blur px-3 py-1 font-mono text-[9px] uppercase tracking-widest text-gold font-semibold flex items-center gap-1.5 border border-gold/20">
+                  <div className="absolute top-4 right-4 rounded-full bg-black/75 backdrop-blur px-3 py-1 font-primary text-[9px] uppercase tracking-widest text-gold font-semibold flex items-center gap-1.5 border border-gold/20">
                     <MapPin size={8} />
                     <span>{current.location}</span>
                   </div>
@@ -123,14 +123,14 @@ export default function SuccessStories() {
                 {/* Hotel Rating Card */}
                 <div className="flex items-center justify-between border-t border-white/5 pt-4">
                   <div className="text-right">
-                    <h3 className="font-serif text-lg font-bold text-white">{current.hotelName}</h3>
-                    <p className="text-[10px] font-mono text-ivory/40 uppercase mt-0.5 tracking-wider">{current.category} • {current.country}</p>
+                    <h3 className="font-primary text-lg font-bold text-white">{current.hotelName}</h3>
+                    <p className="text-[10px] font-primary text-ivory/40 uppercase mt-0.5 tracking-wider">{current.category} • {current.country}</p>
                   </div>
                   <div className="flex items-center gap-0.5 text-gold text-xs">
                     {Array.from({ length: current.stars }).map((_, i) => (
                       <Star key={i} size={11} fill="currentColor" />
                     ))}
-                    <span className="font-mono text-[10px] text-ivory/40 mr-1.5 font-bold">٥.٠</span>
+                    <span className="font-primary text-[10px] text-ivory/40 mr-1.5 font-bold">٥.٠</span>
                   </div>
                 </div>
               </div>
@@ -140,43 +140,43 @@ export default function SuccessStories() {
                 
                 <div className="grid gap-6 sm:grid-cols-2">
                   <div className="space-y-2 rounded-xl border border-red-500/5 bg-red-500/[0.01] p-4">
-                    <span className="font-mono text-[10px] text-red-400 uppercase tracking-widest block font-bold flex items-center gap-1 justify-start flex-row-reverse">
+                    <span className="font-primary text-[10px] text-red-400 uppercase tracking-widest block font-bold flex items-center gap-1 justify-start flex-row-reverse">
                       <AlertCircle size={10} />
                       التحدي والوضع السابق:
                     </span>
-                    <p className="text-xs text-ivory/70 leading-relaxed font-sans">{current.challenge}</p>
+                    <p className="text-xs text-ivory/70 leading-relaxed font-primary">{current.challenge}</p>
                   </div>
 
                   <div className="space-y-2 rounded-xl border border-gold/10 bg-gold/[0.01] p-4">
-                    <span className="font-mono text-[10px] text-gold uppercase tracking-widest block font-bold flex items-center gap-1 justify-start flex-row-reverse">
+                    <span className="font-primary text-[10px] text-gold uppercase tracking-widest block font-bold flex items-center gap-1 justify-start flex-row-reverse">
                       <Sparkles size={10} />
                       منظومة لايتك المنفذة:
                     </span>
-                    <p className="text-xs text-ivory/70 leading-relaxed font-sans">{current.solution}</p>
+                    <p className="text-xs text-ivory/70 leading-relaxed font-primary">{current.solution}</p>
                   </div>
                 </div>
 
                 <div className="grid gap-6 sm:grid-cols-2 border-t border-white/5 pt-4">
                   <div className="space-y-1">
-                    <span className="font-mono text-[10px] text-gold-muted uppercase tracking-widest block font-bold">المسار البرمجي المخصص:</span>
-                    <p className="text-xs text-ivory/60 leading-relaxed font-sans">{current.implementation || "بناء خوادم سحابية مخصصة، دعم منافذ الدفع السريع، دمج مع برمجيات الفنادق."}</p>
+                    <span className="font-primary text-[10px] text-gold-muted uppercase tracking-widest block font-bold">المسار البرمجي المخصص:</span>
+                    <p className="text-xs text-ivory/60 leading-relaxed font-primary">{current.implementation || "بناء خوادم سحابية مخصصة، دعم منافذ الدفع السريع، دمج مع برمجيات الفنادق."}</p>
                   </div>
                   <div className="space-y-1">
-                    <span className="font-mono text-[10px] text-green-400 uppercase tracking-widest block font-bold">أثر الميزانية والصيانة التشغيلية:</span>
-                    <p className="text-xs text-ivory/60 leading-relaxed font-sans">{current.results || "استرداد تام ومستدام للسيادة الفندقية الرقمية مع ترشيد النفقات التشغيلية."}</p>
+                    <span className="font-primary text-[10px] text-green-400 uppercase tracking-widest block font-bold">أثر الميزانية والصيانة التشغيلية:</span>
+                    <p className="text-xs text-ivory/60 leading-relaxed font-primary">{current.results || "استرداد تام ومستدام للسيادة الفندقية الرقمية مع ترشيد النفقات التشغيلية."}</p>
                   </div>
                 </div>
 
                 {/* Metrics Blocks */}
                 <div className="border-t border-white/5 pt-6">
-                  <span className="font-mono text-[10px] text-ivory/40 uppercase tracking-widest block mb-4 font-bold">الأثر المالي الفعلي والموثق:</span>
+                  <span className="font-primary text-[10px] text-ivory/40 uppercase tracking-widest block mb-4 font-bold">الأثر المالي الفعلي والموثق:</span>
                   
                   <div className="grid gap-4 sm:grid-cols-3">
                     {current.metrics.map((m, i) => (
                       <div key={i} className="rounded-xl border border-white/5 bg-[#0D0D0D] p-4 text-center flex flex-col justify-between hover:border-gold/20 transition-all duration-300">
-                        <span className="font-mono text-[10px] text-gold uppercase tracking-wider font-semibold">{m.label}</span>
-                        <div className="font-serif text-2xl font-bold text-gold my-2">{m.value}</div>
-                        <div className="flex justify-center gap-2 font-mono text-[9px] text-ivory/40 border-t border-white/5 pt-1.5 mt-1.5">
+                        <span className="font-primary text-[10px] text-gold uppercase tracking-wider font-semibold">{m.label}</span>
+                        <div className="font-primary text-2xl font-bold text-gold my-2">{m.value}</div>
+                        <div className="flex justify-center gap-2 font-primary text-[9px] text-ivory/40 border-t border-white/5 pt-1.5 mt-1.5">
                           <span>قبل: {m.before}</span>
                           <span>➔</span>
                           <span className="text-green-400 font-bold">بعد: {m.after}</span>
@@ -189,13 +189,13 @@ export default function SuccessStories() {
                 {/* Elegant Quote block */}
                 <div className="rounded-xl border border-gold/15 bg-gradient-to-l from-gold/[0.03] to-transparent p-5 relative overflow-hidden">
                   <Quote size={20} className="text-gold/10 absolute top-4 left-4" />
-                  <blockquote className="font-serif text-xs md:text-sm italic text-white/90 leading-relaxed pl-6">
+                  <blockquote className="font-primary text-xs md:text-sm italic text-white/90 leading-relaxed pl-6">
                     "{current.quote}"
                   </blockquote>
                   <div className="mt-4 flex items-center gap-2 pt-3 border-t border-white/5 justify-end">
-                    <div className="font-mono text-[9px] text-ivory/40 uppercase font-semibold">{current.role}</div>
-                    <span className="text-[10px] text-ivory/40 font-mono">•</span>
-                    <div className="font-serif text-xs font-bold text-gold">{current.author}</div>
+                    <div className="font-primary text-[9px] text-ivory/40 uppercase font-semibold">{current.role}</div>
+                    <span className="text-[10px] text-ivory/40 font-primary">•</span>
+                    <div className="font-primary text-xs font-bold text-gold">{current.author}</div>
                   </div>
                 </div>
 

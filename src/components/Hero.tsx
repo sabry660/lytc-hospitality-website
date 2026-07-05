@@ -55,7 +55,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
   }, []);
 
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-black text-ivory font-sans" id="hero-section">
+    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-black text-ivory font-primary" id="hero-section">
       
       {/* Background Cinematic Slide Carousel */}
       <div className="absolute inset-0 z-0">
@@ -92,8 +92,8 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
             className="h-11 w-11 object-contain"
           />
           <div>
-            <span className="font-serif text-lg md:text-xl font-bold uppercase tracking-[0.25em] text-ivory block">LYTC</span>
-            <span className="block font-mono text-[9px] uppercase tracking-widest text-gold">LYTC Hospitality Partners</span>
+            <span className="font-primary text-lg md:text-xl font-bold uppercase tracking-[0.25em] text-ivory block">LYTC</span>
+            <span className="block font-primary text-[9px] uppercase tracking-widest text-gold">LYTC Hospitality Partners</span>
           </div>
         </div>
 
@@ -102,7 +102,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
             href="https://wa.me/201070853978"
             target="_blank"
             rel="noreferrer"
-            className="hidden lg:flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/15 px-4 py-2 text-xs font-mono text-green-400 hover:bg-green-500/25 transition-all duration-300 animate-pulse"
+            className="hidden lg:flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/15 px-4 py-2 text-xs font-primary text-green-400 hover:bg-green-500/25 transition-all duration-300 animate-pulse"
           >
             <MessageSquare size={13} />
             <span>تواصل عاجل عبر الواتساب</span>
@@ -130,12 +130,12 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
           </div>
 
           <div className="flex justify-between items-center flex-row-reverse border-b border-white/5 pb-2 pt-1 text-[9px] text-ivory/50">
-            <span className="font-serif text-[10px] text-gold font-bold">بوابة النزيل الذكية</span>
+            <span className="font-primary text-[10px] text-gold font-bold">بوابة النزيل الذكية</span>
             <span>Villa 102</span>
           </div>
 
           <div className="my-auto space-y-2.5 text-right">
-            <div className="flex items-center gap-1.5 justify-end text-[10px] text-white font-serif">
+            <div className="flex items-center gap-1.5 justify-end text-[10px] text-white font-primary">
               <span>أهلاً بالضيف الكريم</span>
               <Heart size={8} className="text-gold fill-current animate-pulse" />
             </div>
@@ -159,7 +159,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
 
           <div className="flex items-center justify-between flex-row-reverse pt-2 border-t border-white/5 text-[8px] text-ivory/40">
             <span>دعم Apple Pay و Mada</span>
-            <span className="text-gold font-mono font-bold">ORYX</span>
+            <span className="text-gold font-primary font-bold">ORYX</span>
           </div>
         </div>
       </motion.div>
@@ -178,22 +178,22 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
           <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-transparent via-gold to-transparent" />
           
           <div className="flex justify-between items-center flex-row-reverse pb-2 border-b border-white/5">
-            <span className="font-mono text-[9px] text-gold uppercase tracking-wider font-bold">الربط المركزي المباشر PMS</span>
+            <span className="font-primary text-[9px] text-gold uppercase tracking-wider font-bold">الربط المركزي المباشر PMS</span>
             <span className="h-2 w-2 rounded-full bg-green-500 animate-ping" />
           </div>
 
           <div className="space-y-2 mt-2 text-right">
             <div className="flex justify-between flex-row-reverse text-[9px] text-ivory/50">
               <span>الحجوزات المباشرة (اليوم):</span>
-              <span className="text-green-400 font-bold font-mono">+٣٤,٥٠٠ ر.س</span>
+              <span className="text-green-400 font-bold font-primary">+٣٤,٥٠٠ ر.س</span>
             </div>
             <div className="flex justify-between flex-row-reverse text-[9px] text-ivory/50">
               <span>عمولات Booking الموفرة:</span>
-              <span className="text-green-400 font-bold font-mono">٧,٦٢٠ ر.س</span>
+              <span className="text-green-400 font-bold font-primary">٧,٦٢٠ ر.س</span>
             </div>
             <div className="flex justify-between flex-row-reverse text-[9px] text-ivory/50">
               <span>نسبة إشغال الغرف المباشر:</span>
-              <span className="text-white font-mono font-bold">٨٤.٢٪</span>
+              <span className="text-white font-primary font-bold">٨٤.٢٪</span>
             </div>
           </div>
 
@@ -212,7 +212,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex items-center gap-2 rounded-full border border-gold/25 bg-black/75 px-4 py-1.5 text-xs text-gold font-mono uppercase tracking-widest mb-8 shadow-lg shadow-gold/5"
+          className="flex items-center gap-2 rounded-full border border-gold/25 bg-black/75 px-4 py-1.5 text-xs text-gold font-primary uppercase tracking-widest mb-8 shadow-lg shadow-gold/5"
         >
           <Sparkles size={11} className="text-gold animate-drift" />
           <span>مستشار النمو الرقمي الأول للضيافة الراقية بالخليج</span>
@@ -223,7 +223,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
           <CinematicTitle
             text="حول فندقك المستقل إلى تحفة رقمية فائقة العائد"
             as="h1"
-            className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight max-w-4xl text-white inline-block text-center w-full"
+            className="font-primary text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight max-w-4xl text-white inline-block text-center w-full"
           />
         </div>
 
@@ -248,7 +248,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
             onClick={onOpenConsultation}
             className="w-full sm:w-auto"
           >
-            <div className="w-full sm:w-auto flex items-center justify-center gap-2.5 rounded-lg bg-gold hover:bg-gold-light text-black px-8 py-4 text-xs font-mono tracking-widest font-bold transition-all duration-300 shadow-xl shadow-gold/20 cursor-pointer">
+            <div className="w-full sm:w-auto flex items-center justify-center gap-2.5 rounded-lg bg-gold hover:bg-gold-light text-black px-8 py-4 text-xs font-primary tracking-widest font-bold transition-all duration-300 shadow-xl shadow-gold/20 cursor-pointer">
               <span>احجز جلسة استراتيجية مغلقة</span>
               <Calendar size={14} />
             </div>
@@ -258,7 +258,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
             href="https://wa.me/201070853978"
             target="_blank"
             rel="noreferrer"
-            className="w-full sm:w-auto flex items-center justify-center gap-2.5 rounded-lg border border-green-500/35 bg-green-500/10 hover:bg-green-500/20 text-green-400 hover:text-green-300 px-8 py-4 text-xs font-mono tracking-widest font-bold transition-all duration-300 animate-pulse"
+            className="w-full sm:w-auto flex items-center justify-center gap-2.5 rounded-lg border border-green-500/35 bg-green-500/10 hover:bg-green-500/20 text-green-400 hover:text-green-300 px-8 py-4 text-xs font-primary tracking-widest font-bold transition-all duration-300 animate-pulse"
           >
             <MessageSquare size={14} className="text-green-400" />
             <span>تحدث مع الاستشاري عبر واتساب</span>
@@ -268,7 +268,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
             onClick={onScrollToSuccess}
             className="w-full sm:w-auto"
           >
-            <div className="w-full sm:w-auto rounded-lg border border-white/20 bg-white/[0.03] hover:border-gold/40 hover:bg-white/[0.08] hover:text-gold px-8 py-4 text-xs font-mono tracking-widest font-semibold transition-all duration-300 cursor-pointer">
+            <div className="w-full sm:w-auto rounded-lg border border-white/20 bg-white/[0.03] hover:border-gold/40 hover:bg-white/[0.08] hover:text-gold px-8 py-4 text-xs font-primary tracking-widest font-semibold transition-all duration-300 cursor-pointer">
               شاهد دراسات النجاح الخليجية
             </div>
           </MagneticButton>
@@ -290,9 +290,9 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
             <div key={idx} className="flex flex-col items-center md:items-start text-center md:text-right">
               <div className="flex items-center gap-2 text-gold justify-start flex-row-reverse">
                 <Check size={14} className="text-gold shrink-0" />
-                <span className="font-serif text-sm font-semibold tracking-wide text-ivory">{item.label}</span>
+                <span className="font-primary text-sm font-semibold tracking-wide text-ivory">{item.label}</span>
               </div>
-              <span className="text-[11px] text-ivory/40 mt-1 font-sans">{item.desc}</span>
+              <span className="text-[11px] text-ivory/40 mt-1 font-primary">{item.desc}</span>
             </div>
           ))}
         </motion.div>
@@ -312,7 +312,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
             />
           ))}
         </div>
-        <span className="font-mono text-[10px] text-gold uppercase tracking-widest hidden md:inline-block">
+        <span className="font-primary text-[10px] text-gold uppercase tracking-widest hidden md:inline-block">
           {CINEMATIC_IMAGES[currentSlide].caption}
         </span>
       </div>

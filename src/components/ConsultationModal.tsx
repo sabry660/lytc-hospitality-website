@@ -117,7 +117,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 font-sans">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 font-primary">
         {/* Backdrop */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -150,9 +150,9 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
             <div>
               <div className="flex items-center gap-2 text-gold justify-start flex-row-reverse">
                 <Sparkles size={16} className="text-gold" />
-                <span className="font-mono text-xs uppercase tracking-widest font-semibold">استشارات لايتك الرقمية</span>
+                <span className="font-primary text-xs uppercase tracking-widest font-semibold">استشارات لايتك الرقمية</span>
               </div>
-              <h3 className="mt-3 font-serif text-xl sm:text-2xl font-semibold leading-tight text-white">
+              <h3 className="mt-3 font-primary text-xl sm:text-2xl font-semibold leading-tight text-white">
                 شخّص العوائد الضائعة لغرف فندقك
               </h3>
               <p className="mt-2 text-xs text-ivory/60 leading-relaxed font-light">
@@ -163,11 +163,11 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
             {/* Live Financial Calculations */}
             <div className="my-6 space-y-4 rounded-xl border border-gold/15 bg-gold/[0.02] p-4 md:my-0 text-right">
               <div>
-                <div className="flex items-center gap-1.5 text-[10px] text-ivory/40 uppercase font-mono tracking-wider justify-start flex-row-reverse">
+                <div className="flex items-center gap-1.5 text-[10px] text-ivory/40 uppercase font-primary tracking-wider justify-start flex-row-reverse">
                   <span className="w-full">تقدير العمولات المهدرة لـ OTAs سنوياً</span>
                   <Coins size={12} className="text-red-400 shrink-0 ml-1.5" />
                 </div>
-                <div className="mt-1 font-mono text-lg sm:text-xl font-bold text-red-400">
+                <div className="mt-1 font-primary text-lg sm:text-xl font-bold text-red-400">
                   {adr > 0 ? "ريال / درهم " : ""}{otaLeakage.toLocaleString()}
                 </div>
                 <p className="text-[10px] text-ivory/40 mt-0.5">
@@ -176,11 +176,11 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
               </div>
 
               <div className="border-t border-gold/10 pt-3">
-                <div className="flex items-center gap-1.5 text-[10px] text-gold uppercase font-mono tracking-wider justify-start flex-row-reverse">
+                <div className="flex items-center gap-1.5 text-[10px] text-gold uppercase font-primary tracking-wider justify-start flex-row-reverse">
                   <span className="w-full">العوائد المباشرة الإضافية المستردة</span>
                   <Percent size={12} className="text-gold shrink-0 ml-1.5" />
                 </div>
-                <div className="mt-1 font-mono text-xl sm:text-2xl font-bold text-gold gold-gradient-text">
+                <div className="mt-1 font-primary text-xl sm:text-2xl font-bold text-gold gold-gradient-text">
                   {adr > 0 ? "ريال / درهم " : ""}{projectedUpside.toLocaleString()} <span className="text-[10px] text-gold font-normal">/ سنوياً</span>
                 </div>
                 <p className="text-[10px] text-gold/60 mt-0.5">
@@ -205,7 +205,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                 <div className="flex border-b border-gold/10 pb-4 justify-start flex-row-reverse">
                   <button
                     onClick={() => setActiveTab("form")}
-                    className={`pb-2 pl-6 font-mono text-xs uppercase tracking-wider relative cursor-pointer ${
+                    className={`pb-2 pl-6 font-primary text-xs uppercase tracking-wider relative cursor-pointer ${
                       activeTab === "form" ? "text-gold font-bold" : "text-ivory/40"
                     }`}
                   >
@@ -217,7 +217,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
 
                   <button
                     onClick={() => setActiveTab("calculator")}
-                    className={`pb-2 px-4 font-mono text-xs uppercase tracking-wider relative cursor-pointer ${
+                    className={`pb-2 px-4 font-primary text-xs uppercase tracking-wider relative cursor-pointer ${
                       activeTab === "calculator" ? "text-gold font-bold" : "text-ivory/40"
                     }`}
                   >
@@ -232,7 +232,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                 <div className="py-4 flex-grow text-right">
                   {activeTab === "calculator" ? (
                     <div className="space-y-4 text-right">
-                      <div className="flex items-center gap-2 text-gold text-xs font-mono uppercase justify-start flex-row-reverse">
+                      <div className="flex items-center gap-2 text-gold text-xs font-primary uppercase justify-start flex-row-reverse">
                         <Calculator size={14} className="shrink-0 ml-1.5" />
                         <span>محاكي وحاسبة عوائد الغرف الفندقية بالخليج</span>
                       </div>
@@ -268,7 +268,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                             onChange={(e) => setOccupancy(parseInt(e.target.value))}
                             className="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-gold mt-3 mb-2"
                           />
-                          <div className="text-left text-xs font-mono text-gold">{occupancy}% نسبة الإشغال</div>
+                          <div className="text-left text-xs font-primary text-gold">{occupancy}% نسبة الإشغال</div>
                         </div>
 
                         <div>
@@ -281,13 +281,13 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                             onChange={(e) => setDirectPct(parseInt(e.target.value))}
                             className="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-gold mt-3 mb-2"
                           />
-                          <div className="text-left text-xs font-mono text-gold">{directPct}% حجز مباشر ({ (100 - directPct) }% عبر المنصات)</div>
+                          <div className="text-left text-xs font-primary text-gold">{directPct}% حجز مباشر ({ (100 - directPct) }% عبر المنصات)</div>
                         </div>
                       </div>
 
                       <div className="mt-6 rounded-xl border border-white/5 bg-white/[0.02] p-4 text-right">
-                        <h4 className="text-xs font-mono uppercase tracking-wider text-gold mb-1">الهدف التشغيلي الذي نلتزم بتقديمه:</h4>
-                        <p className="text-[11px] text-ivory/70 leading-relaxed font-sans">
+                        <h4 className="text-xs font-primary uppercase tracking-wider text-gold mb-1">الهدف التشغيلي الذي نلتزم بتقديمه:</h4>
+                        <p className="text-[11px] text-ivory/70 leading-relaxed font-primary">
                           نحن نهيئ موقع فندقك وبوابة النزيل لرفع نسبة الحجز المباشر لتبلغ <strong>{(directPct + 25)}% على الأقل</strong> خلال 4 أشهر، مما يمنع تسرب العمولات الصافية ويحقق تدفقاً نقدياً مستداماً.
                         </p>
                       </div>
@@ -295,7 +295,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                       <div className="pt-4 flex justify-end">
                         <button
                           onClick={() => setActiveTab("form")}
-                          className="flex items-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black px-6 py-2.5 text-xs uppercase font-mono tracking-widest font-bold transition-all duration-300 shadow-lg shadow-gold/15 cursor-pointer"
+                          className="flex items-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black px-6 py-2.5 text-xs uppercase font-primary tracking-widest font-bold transition-all duration-300 shadow-lg shadow-gold/15 cursor-pointer"
                         >
                           <span>اذهب لحجز الاستشارة المباشرة</span>
                           <ArrowLeft size={14} />
@@ -372,7 +372,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                             placeholder="مثال: 0501234567"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
-                            className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-ivory focus:border-gold/50 focus:outline-none placeholder-ivory/20 transition-colors text-right font-mono"
+                            className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-ivory focus:border-gold/50 focus:outline-none placeholder-ivory/20 transition-colors text-right font-primary"
                           />
                         </div>
 
@@ -403,7 +403,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                             required
                             value={roomCount}
                             onChange={(e) => setRoomCount(e.target.value)}
-                            className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-ivory focus:border-gold/50 focus:outline-none placeholder-ivory/20 transition-colors text-right font-mono"
+                            className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-ivory focus:border-gold/50 focus:outline-none placeholder-ivory/20 transition-colors text-right font-primary"
                           />
                         </div>
 
@@ -418,7 +418,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                             placeholder="https://myhotel.com"
                             value={currentWebsite}
                             onChange={(e) => setCurrentWebsite(e.target.value)}
-                            className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-ivory focus:border-gold/50 focus:outline-none placeholder-ivory/20 transition-colors text-right font-mono"
+                            className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-ivory focus:border-gold/50 focus:outline-none placeholder-ivory/20 transition-colors text-right font-primary"
                           />
                         </div>
 
@@ -444,7 +444,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                         {/* Primary CTA Form Submit */}
                         <button
                           type="submit"
-                          className="w-full flex items-center justify-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black py-3.5 text-xs uppercase font-mono tracking-widest font-bold transition-all duration-300 shadow-lg shadow-gold/15 cursor-pointer"
+                          className="w-full flex items-center justify-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black py-3.5 text-xs uppercase font-primary tracking-widest font-bold transition-all duration-300 shadow-lg shadow-gold/15 cursor-pointer"
                         >
                           <span>احجز استشارتك المجانية للنمو</span>
                           <ArrowLeft size={14} />
@@ -455,7 +455,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                           href="https://wa.me/201070853978"
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full flex items-center justify-center gap-2 rounded-lg border border-emerald-500/30 bg-emerald-500/5 hover:border-emerald-500/50 hover:bg-emerald-500/10 text-emerald-400 py-3.5 text-xs uppercase font-mono tracking-widest font-bold transition-all duration-300"
+                          className="w-full flex items-center justify-center gap-2 rounded-lg border border-emerald-500/30 bg-emerald-500/5 hover:border-emerald-500/50 hover:bg-emerald-500/10 text-emerald-400 py-3.5 text-xs uppercase font-primary tracking-widest font-bold transition-all duration-300"
                         >
                           <MessageSquare size={14} className="fill-emerald-400 stroke-none" />
                           <span>تحدث معنا فورا عبر واتساب</span>
@@ -475,12 +475,12 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                 <div className="rounded-full bg-gold/10 border border-gold/30 p-4 text-gold animate-drift">
                   <Sparkles size={32} />
                 </div>
-                <h3 className="font-serif text-2xl font-semibold text-white">تم استلام طلب الاستشارة بنجاح</h3>
+                <h3 className="font-primary text-2xl font-semibold text-white">تم استلام طلب الاستشارة بنجاح</h3>
                 <p className="text-xs text-ivory/60 max-w-sm leading-relaxed">
                   شكراً لك، سعادة المدير <strong>{managerName}</strong>. لقد قمنا بتوثيق وجمع أرقام الأداء الخاصة بـ <strong>{hotelName}</strong> في {country}. سيقوم كبير مستشاري النمو لدينا بالتواصل معكم هاتفياً على رقمكم <strong>{phone}</strong> خلال ٤ ساعات عمل لإجراء المراجعة.
                 </p>
                 
-                <div className="w-full max-w-xs rounded-xl border border-gold/10 bg-[#0E0E0E] p-4 text-right space-y-2.5 text-[11px] font-mono mt-4">
+                <div className="w-full max-w-xs rounded-xl border border-gold/10 bg-[#0E0E0E] p-4 text-right space-y-2.5 text-[11px] font-primary mt-4">
                   <div className="text-gold uppercase tracking-wider font-bold text-center pb-2 border-b border-gold/15">تفاصيل الملف الرقمي لـ {hotelName}:</div>
                   <div className="flex justify-between flex-row-reverse text-ivory/50"><span>الفندق المستهدف:</span> <span className="text-white font-medium">{hotelName}</span></div>
                   <div className="flex justify-between flex-row-reverse text-ivory/50"><span>عدد المفاتيح المحللة:</span> <span className="text-white font-medium">{rooms} غرفة</span></div>
@@ -490,7 +490,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                 <div className="pt-4 flex gap-3 w-full max-w-sm justify-center">
                   <button
                     onClick={() => { onClose(); resetModal(); }}
-                    className="rounded-lg border border-gold/20 text-gold hover:bg-gold/10 px-5 py-2 text-xs uppercase font-mono tracking-widest transition-all duration-300 cursor-pointer"
+                    className="rounded-lg border border-gold/20 text-gold hover:bg-gold/10 px-5 py-2 text-xs uppercase font-primary tracking-widest transition-all duration-300 cursor-pointer"
                   >
                     العودة للموقع الفندقي
                   </button>
@@ -498,7 +498,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPackage }: C
                     href={lastWhatsappUrl || "https://wa.me/201070853978"}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2 text-xs uppercase font-mono tracking-widest transition-all duration-300 flex items-center gap-1 font-bold"
+                    className="rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2 text-xs uppercase font-primary tracking-widest transition-all duration-300 flex items-center gap-1 font-bold"
                   >
                     <span>إرسال الرسالة عبر واتساب</span>
                   </a>

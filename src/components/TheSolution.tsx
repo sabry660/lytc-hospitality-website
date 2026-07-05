@@ -29,7 +29,7 @@ export default function TheSolution() {
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
 
   return (
-    <section className="bg-dark-bg py-24 text-ivory relative overflow-hidden font-sans" id="the-solution">
+    <section className="bg-dark-bg py-24 text-ivory relative overflow-hidden font-primary" id="the-solution">
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-gold/5 rounded-full pointer-events-none animate-slow-pulse" />
       
@@ -39,9 +39,9 @@ export default function TheSolution() {
         <div className="text-center max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-2 text-gold">
             <RefreshCw size={14} className="text-gold animate-drift" />
-            <span className="font-mono text-xs uppercase tracking-widest font-semibold">استراتيجية رقمية موحدة</span>
+            <span className="font-primary text-xs uppercase tracking-widest font-semibold">استراتيجية رقمية موحدة</span>
           </div>
-          <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+          <h2 className="mt-4 font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
             منظومة لايتك (LYTC) المغلقة <br className="hidden md:block" />
             <span className="italic font-normal text-gold">لتعظيم الأرباح والسيادة التشغيلية</span>
           </h2>
@@ -75,7 +75,7 @@ export default function TheSolution() {
                 <div className="absolute top-0 left-0 h-16 w-16 bg-gradient-to-bl from-gold/5 to-transparent rounded-br-full" />
                 
                 {/* Node Order Number */}
-                <span className="absolute top-4 left-4 font-mono text-[10px] text-ivory/20 font-bold uppercase">
+                <span className="absolute top-4 left-4 font-primary text-[10px] text-ivory/20 font-bold uppercase">
                   المرحلة {String(idx + 1).padStart(2, '0')}
                 </span>
 
@@ -85,15 +85,15 @@ export default function TheSolution() {
                   <IconComp size={20} />
                 </div>
 
-                <h3 className={`mt-6 font-serif text-base sm:text-lg font-medium transition-colors ${isHovered ? "text-gold" : "text-ivory"}`}>
+                <h3 className={`mt-6 font-primary text-base sm:text-lg font-medium transition-colors ${isHovered ? "text-gold" : "text-ivory"}`}>
                   {node.title}
                 </h3>
                 
-                <p className="mt-2 text-xs text-ivory/50 leading-relaxed min-h-[50px] font-sans">
+                <p className="mt-2 text-xs text-ivory/50 leading-relaxed min-h-[50px] font-primary">
                   {node.description}
                 </p>
 
-                <div className="mt-4 pt-4 border-t border-white/5 flex items-center justify-between text-[11px] font-mono">
+                <div className="mt-4 pt-4 border-t border-white/5 flex items-center justify-between text-[11px] font-primary">
                   <span className="text-ivory/40">الأثر المالي:</span>
                   <span className="text-gold font-semibold flex items-center gap-1">
                     {node.id === "website" && "تحويل حجز مباشر"}
@@ -114,7 +114,7 @@ export default function TheSolution() {
 
         {/* Dynamic connection explanation */}
         <div className="mt-12 rounded-xl border border-white/5 bg-white/[0.01] p-4 text-center">
-          <p className="text-xs text-ivory/40 font-mono tracking-wider">
+          <p className="text-xs text-ivory/40 font-primary tracking-wider">
             {hoveredNode ? (
               <span className="text-gold">
                 ★ التفاعل المالي مع <strong>{ECOSYSTEM.find(n => n.id === hoveredNode)?.title}</strong> يوضح تدفق البيانات والعوائد في دورة النمو الفندقية المغلقة.

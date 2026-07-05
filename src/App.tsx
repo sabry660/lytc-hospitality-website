@@ -87,7 +87,7 @@ export default function App() {
       />
 
       <SmoothScroll>
-        <div className="relative min-h-screen bg-[#080808] text-ivory antialiased selection:bg-gold/30 selection:text-ivory font-sans" id="app-root">
+        <div className="relative min-h-screen bg-[#080808] text-ivory antialiased selection:bg-gold/30 selection:text-ivory font-primary" id="app-root">
           
           {/* Floating Action WhatsApp - Fixed Bottom Left (Breathing/Floating micro-animation) */}
           <div className="fixed bottom-6 left-6 z-50 flex flex-col gap-2.5">
@@ -95,7 +95,7 @@ export default function App() {
               href="https://wa.me/201070853978"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 border border-emerald-500/30 px-5 py-3 text-xs font-mono uppercase tracking-widest text-white shadow-xl shadow-emerald-950/40 backdrop-blur-md transition-all duration-300 font-bold"
+              className="flex items-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 border border-emerald-500/30 px-5 py-3 text-xs font-primary uppercase tracking-widest text-white shadow-xl shadow-emerald-950/40 backdrop-blur-md transition-all duration-300 font-bold"
               id="floating-whatsapp-btn"
               animate={{
                 y: [0, -6, 0]
@@ -180,12 +180,12 @@ export default function App() {
 
             <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12 space-y-8 text-right md:text-center">
               
-              <div className="flex items-center justify-center md:justify-center gap-2 text-gold font-mono text-xs uppercase tracking-widest">
+              <div className="flex items-center justify-center md:justify-center gap-2 text-gold font-primary text-xs uppercase tracking-widest">
                 <Sparkles size={14} className="animate-drift" />
                 <span>دعوة خاصة للمديرين وملاك الفنادق الطموحين بالخليج</span>
               </div>
 
-              <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-light tracking-tight leading-tight max-w-3xl mx-auto text-white">
+              <h2 className="font-primary text-3xl sm:text-5xl md:text-6xl font-light tracking-tight leading-tight max-w-3xl mx-auto text-white">
                 هل أنت مستعد لتحويل فندقك إلى <br />
                 <span className="italic font-normal gold-gradient-text">الوجهة الرقمية الأولى</span> في مدينتك؟
               </h2>
@@ -196,14 +196,14 @@ export default function App() {
 
               <div className="flex flex-col sm:flex-row gap-5 justify-center items-center max-w-2xl mx-auto pt-4 w-full z-30">
                 <MagneticButton onClick={() => openConsultation("Ecosystem Growth")}>
-                  <div className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black px-8 py-4 text-xs uppercase font-mono tracking-widest font-bold transition-all duration-300 shadow-xl shadow-gold/20 cursor-pointer">
+                  <div className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black px-8 py-4 text-xs uppercase font-primary tracking-widest font-bold transition-all duration-300 shadow-xl shadow-gold/20 cursor-pointer">
                     <span>احجز استشارتك المجانية للنمو</span>
                     <Calendar size={13} />
                   </div>
                 </MagneticButton>
 
                 <MagneticButton onClick={() => openConsultation("Elite Enterprise")}>
-                  <div className="w-full sm:w-auto rounded-lg border border-white/20 bg-white/[0.03] hover:border-gold/40 hover:bg-white/[0.08] hover:text-gold px-8 py-4 text-xs uppercase font-mono tracking-widest font-semibold transition-all duration-300 cursor-pointer">
+                  <div className="w-full sm:w-auto rounded-lg border border-white/20 bg-white/[0.03] hover:border-gold/40 hover:bg-white/[0.08] hover:text-gold px-8 py-4 text-xs uppercase font-primary tracking-widest font-semibold transition-all duration-300 cursor-pointer">
                     طلب عرض برمجيات متكامل
                   </div>
                 </MagneticButton>
@@ -212,14 +212,14 @@ export default function App() {
                   href="https://wa.me/201070853978"
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full sm:w-auto rounded-lg border border-emerald-500/20 bg-emerald-500/5 hover:border-emerald-500/40 hover:bg-emerald-500/10 hover:text-emerald-400 px-6 py-4 text-xs uppercase font-mono tracking-widest font-semibold transition-all duration-300 flex items-center justify-center gap-2 animate-pulse"
+                  className="w-full sm:w-auto rounded-lg border border-emerald-500/20 bg-emerald-500/5 hover:border-emerald-500/40 hover:bg-emerald-500/10 hover:text-emerald-400 px-6 py-4 text-xs uppercase font-primary tracking-widest font-semibold transition-all duration-300 flex items-center justify-center gap-2 animate-pulse"
                 >
                   <MessageSquare size={14} />
                   <span>تواصل فوراً عبر واتساب</span>
                 </a>
               </div>
 
-              <div className="pt-6 flex flex-wrap gap-x-8 gap-y-3 justify-center font-mono text-[10px] text-ivory/40 uppercase tracking-widest">
+              <div className="pt-6 flex flex-wrap gap-x-8 gap-y-3 justify-center font-primary text-[10px] text-ivory/40 uppercase tracking-widest">
                 <span>✓ خوادم سحابية محلية بالرياض / دبي</span>
                 <span>✓ دعم مجلس الإدارة العاجل على مدار ٢٤/٧</span>
                 <span>✓ دمج شامل مع نظام إدارة الفندق (PMS) الخاص بكم</span>

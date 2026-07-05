@@ -46,16 +46,16 @@ export default function TheProblem() {
   };
 
   return (
-    <section className="bg-[#050505] py-24 text-ivory border-t border-white/5 font-sans" id="the-problem">
+    <section className="bg-[#050505] py-24 text-ivory border-t border-white/5 font-primary" id="the-problem">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
         {/* Header */}
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 text-gold">
             <AlertTriangle size={14} className="text-gold animate-drift" />
-            <span className="font-mono text-xs uppercase tracking-widest font-semibold">أزمة هوامش الربح الفندقية</span>
+            <span className="font-primary text-xs uppercase tracking-widest font-semibold">أزمة هوامش الربح الفندقية</span>
           </div>
-          <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+          <h2 className="mt-4 font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
             فندقك الفاخر يستحق أكثر من <br className="hidden md:block" />
             <span className="italic font-normal text-gold">مجرد صفحة إنترنت صامتة</span>
           </h2>
@@ -73,10 +73,10 @@ export default function TheProblem() {
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-white/5">
                   <div>
-                    <h3 className="font-serif text-base sm:text-lg font-medium text-red-400">قمع تسرب حجوزات وعوائد الفندق</h3>
-                    <p className="text-[11px] text-ivory/40 font-mono uppercase tracking-wider mt-0.5">أين تذهب أرباح غرفتك المباشرة؟</p>
+                    <h3 className="font-primary text-base sm:text-lg font-medium text-red-400">قمع تسرب حجوزات وعوائد الفندق</h3>
+                    <p className="text-[11px] text-ivory/40 font-primary uppercase tracking-wider mt-0.5">أين تذهب أرباح غرفتك المباشرة؟</p>
                   </div>
-                  <div className="font-mono text-[10px] text-red-400/80 bg-red-400/5 px-2.5 py-1 rounded-full border border-red-400/10">
+                  <div className="font-primary text-[10px] text-red-400/80 bg-red-400/5 px-2.5 py-1 rounded-full border border-red-400/10">
                     عينة المحاكاة السنوية: {startGuests} زائر مهتم
                   </div>
                 </div>
@@ -85,19 +85,19 @@ export default function TheProblem() {
                 <div className="mt-6 space-y-4">
                   <div className="relative p-4 rounded-xl border border-white/5 bg-white/[0.01] flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="h-8 w-8 rounded bg-gold/10 text-gold flex items-center justify-center font-mono text-xs">٠١</div>
+                      <div className="h-8 w-8 rounded bg-gold/10 text-gold flex items-center justify-center font-primary text-xs">٠١</div>
                       <div>
                         <h4 className="text-xs font-semibold uppercase tracking-wider text-ivory">زوار محركات البحث بالخليج</h4>
                         <p className="text-[10px] text-ivory/50 mt-0.5">يبحثون عن أجنحة فاخرة بالرياض، جميرا، مسقط أو الدوحة</p>
                       </div>
                     </div>
-                    <span className="font-mono text-sm font-bold text-ivory">{startGuests}</span>
+                    <span className="font-primary text-sm font-bold text-ivory">{startGuests}</span>
                   </div>
 
                   <div className="flex justify-center my-1">
                     <div className="flex flex-col items-center">
                       <ArrowDown size={14} className="text-red-500/50 animate-bounce" />
-                      <span className="text-[9px] font-mono text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
+                      <span className="text-[9px] font-primary text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
                         خسارة -{(visibilityLeak * 100)}% لعدم الظهور في خرائط وجوجل مابس
                       </span>
                     </div>
@@ -106,19 +106,19 @@ export default function TheProblem() {
                   {/* Step 2 */}
                   <div className="relative p-4 rounded-xl border border-white/5 bg-white/[0.01] flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="h-8 w-8 rounded bg-gold/10 text-gold flex items-center justify-center font-mono text-xs">٠٢</div>
+                      <div className="h-8 w-8 rounded bg-gold/10 text-gold flex items-center justify-center font-primary text-xs">٠٢</div>
                       <div>
                         <h4 className="text-xs font-semibold uppercase tracking-wider text-ivory">زوار موقع الفندق الفعليين</h4>
                         <p className="text-[10px] text-ivory/50 mt-0.5">الضيوف الذين عثروا على رابط موقع فندقك ودخلوا للتصفح</p>
                       </div>
                     </div>
-                    <span className="font-mono text-sm font-bold text-ivory/80">{afterSearch}</span>
+                    <span className="font-primary text-sm font-bold text-ivory/80">{afterSearch}</span>
                   </div>
 
                   <div className="flex justify-center my-1">
                     <div className="flex flex-col items-center">
                       <ArrowDown size={14} className="text-red-500/50 animate-bounce" />
-                      <span className="text-[9px] font-mono text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
+                      <span className="text-[9px] font-primary text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
                         خروج -{(trustLeak * 100)}% بسبب بطء التصفح وواجهات الموبايل القديمة
                       </span>
                     </div>
@@ -127,19 +127,19 @@ export default function TheProblem() {
                   {/* Step 3 */}
                   <div className="relative p-4 rounded-xl border border-white/5 bg-white/[0.01] flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="h-8 w-8 rounded bg-gold/10 text-gold flex items-center justify-center font-mono text-xs">٠٣</div>
+                      <div className="h-8 w-8 rounded bg-gold/10 text-gold flex items-center justify-center font-primary text-xs">٠٣</div>
                       <div>
                         <h4 className="text-xs font-semibold uppercase tracking-wider text-ivory">النية الجادة لإتمام الحجز واختيار التواريخ</h4>
                         <p className="text-[10px] text-ivory/50 mt-0.5">ضيوف مستعدون لاختيار الغرفة وإتمام عملية الدفع الفوري</p>
                       </div>
                     </div>
-                    <span className="font-mono text-sm font-bold text-ivory/70">{afterTrust}</span>
+                    <span className="font-primary text-sm font-bold text-ivory/70">{afterTrust}</span>
                   </div>
 
                   <div className="flex justify-center my-1">
                     <div className="flex flex-col items-center">
                       <ArrowDown size={14} className="text-red-500/50 animate-bounce" />
-                      <span className="text-[9px] font-mono text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
+                      <span className="text-[9px] font-primary text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
                         فقدان -{(bookingLeak * 100)}% لمنصات الحجز الخارجية لعدم وجود دفع محلي مرن
                       </span>
                     </div>
@@ -148,13 +148,13 @@ export default function TheProblem() {
                   {/* Final Step */}
                   <div className="relative p-4 rounded-xl border border-gold/20 bg-gold/5 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="h-8 w-8 rounded bg-gold/20 text-gold flex items-center justify-center font-mono text-xs">★</div>
+                      <div className="h-8 w-8 rounded bg-gold/20 text-gold flex items-center justify-center font-primary text-xs">★</div>
                       <div>
                         <h4 className="text-xs font-bold uppercase tracking-wider text-gold">الحجوزات المباشرة ذات الهامش المالي الكامل</h4>
                         <p className="text-[10px] text-gold/60 mt-0.5">الحجوزات التي تمت بالكامل عبر موقع الفندق ودخلت مباشرة لخزينتكم</p>
                       </div>
                     </div>
-                    <span className="font-mono text-sm sm:text-base font-bold text-gold">{directBookers} نزلاء فقط</span>
+                    <span className="font-primary text-sm sm:text-base font-bold text-gold">{directBookers} نزلاء فقط</span>
                   </div>
                 </div>
               </div>
@@ -162,12 +162,12 @@ export default function TheProblem() {
               {/* Bottom Financial Analysis */}
               <div className="mt-6 pt-4 border-t border-white/5 grid grid-cols-2 gap-4">
                 <div>
-                  <span className="text-[9px] font-mono text-ivory/40 uppercase block">عمولات مهدورة لـ Booking:</span>
-                  <span className="font-mono text-xs sm:text-sm text-red-400 font-semibold">{otaBookers} نزلاء عبر المنصات = {formatCurrency(otaCommissionLost)}</span>
+                  <span className="text-[9px] font-primary text-ivory/40 uppercase block">عمولات مهدورة لـ Booking:</span>
+                  <span className="font-primary text-xs sm:text-sm text-red-400 font-semibold">{otaBookers} نزلاء عبر المنصات = {formatCurrency(otaCommissionLost)}</span>
                 </div>
                 <div>
-                  <span className="text-[9px] font-mono text-ivory/40 uppercase block">إجمالي تسرب الإيرادات المحتمل:</span>
-                  <span className="font-mono text-xs sm:text-sm text-red-400 font-bold">{formatCurrency(totalLeakageMoney)}</span>
+                  <span className="text-[9px] font-primary text-ivory/40 uppercase block">إجمالي تسرب الإيرادات المحتمل:</span>
+                  <span className="font-primary text-xs sm:text-sm text-red-400 font-bold">{formatCurrency(totalLeakageMoney)}</span>
                 </div>
               </div>
             </div>
@@ -176,7 +176,7 @@ export default function TheProblem() {
           {/* Right Column: Problem Cards Interactive List */}
           <div className="lg:col-span-6 space-y-4 flex flex-col justify-between">
             <div>
-              <h3 className="font-serif text-xl sm:text-2xl font-light text-ivory/90 mb-6">
+              <h3 className="font-primary text-xl sm:text-2xl font-light text-ivory/90 mb-6">
                 العقبات الـ 6 الأساسية التي تخنق مبيعات فندقك المباشرة:
               </h3>
 
@@ -207,7 +207,7 @@ export default function TheProblem() {
                             <h4 className={`text-xs sm:text-sm uppercase tracking-wider font-semibold ${isActive ? "text-gold" : "text-ivory"}`}>
                               {problem.title}
                             </h4>
-                            <span className="font-mono text-[9px] text-red-400 font-medium px-2 py-0.5 rounded bg-red-400/5 border border-red-400/10 w-fit">
+                            <span className="font-primary text-[9px] text-red-400 font-medium px-2 py-0.5 rounded bg-red-400/5 border border-red-400/10 w-fit">
                               {problem.impact}
                             </span>
                           </div>
@@ -224,7 +224,7 @@ export default function TheProblem() {
                                 <p className="mt-3 text-[11px] sm:text-xs text-ivory/70 leading-relaxed">
                                   <strong>العقبة التشغيلية:</strong> {problem.pain}
                                 </p>
-                                <p className="mt-1.5 text-[11px] sm:text-xs text-gold/80 leading-relaxed font-serif italic">
+                                <p className="mt-1.5 text-[11px] sm:text-xs text-gold/80 leading-relaxed font-primary italic">
                                   <strong>تأثيرها المالي:</strong> {problem.outcome}
                                 </p>
                               </motion.div>

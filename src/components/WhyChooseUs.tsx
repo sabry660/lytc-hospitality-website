@@ -64,7 +64,7 @@ const CARDS = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-dark-bg py-24 text-ivory border-t border-white/5 font-sans relative" id="why-choose-us">
+    <section className="bg-dark-bg py-24 text-ivory border-t border-white/5 font-primary relative" id="why-choose-us">
       {/* Decorative mashrabiya layout */}
       <div className="absolute inset-0 mashrabiya-overlay pointer-events-none" />
 
@@ -72,10 +72,10 @@ export default function WhyChooseUs() {
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold font-semibold">
+          <span className="font-primary text-[10px] uppercase tracking-[0.25em] text-gold font-semibold">
             تميز وموثوقية مطلقة لعلامتك
           </span>
-          <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+          <h2 className="mt-4 font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
             لماذا يختارنا ملاّك ومديرو <br className="hidden md:block" />
             <span className="italic font-normal text-gold">الفنادق والمنتجعات الفاخرة؟</span>
           </h2>
@@ -101,20 +101,20 @@ export default function WhyChooseUs() {
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-base sm:text-lg font-semibold text-ivory flex items-center gap-1.5">
+                    <h3 className="font-primary text-base sm:text-lg font-semibold text-ivory flex items-center gap-1.5">
                       {card.title}
                     </h3>
-                    <span className="block font-mono text-[8px] text-ivory/30 uppercase tracking-wider mt-0.5 leading-none">
+                    <span className="block font-primary text-[8px] text-ivory/30 uppercase tracking-wider mt-0.5 leading-none">
                       {card.engTitle}
                     </span>
                   </div>
 
-                  <p className="text-xs text-ivory/50 leading-relaxed font-sans">
+                  <p className="text-xs text-ivory/50 leading-relaxed font-primary">
                     {card.desc}
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-[10px] font-mono text-gold/40">
+                <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-[10px] font-primary text-gold/40">
                   <CheckCircle size={10} className="text-gold/40" />
                   <span>معيار جودة موثق</span>
                 </div>

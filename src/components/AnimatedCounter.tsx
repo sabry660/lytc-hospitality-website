@@ -67,7 +67,7 @@ export default function AnimatedCounter({
   };
 
   return (
-    <span ref={elementRef} className="font-mono tracking-tight">
+    <span ref={elementRef} className="font-primary tracking-tight">
       {prefix}
       {count.toFixed(decimals)}
       {suffix}

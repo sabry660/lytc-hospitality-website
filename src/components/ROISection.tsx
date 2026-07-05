@@ -46,10 +46,10 @@ export default function ROISection() {
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold font-semibold">
+          <span className="font-primary text-[10px] uppercase tracking-[0.25em] text-gold font-semibold">
             حاسبة العائد والسيادة المالية
           </span>
-          <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+          <h2 className="mt-4 font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
             استرد عوائد فندقك الضائعة <br />
             <span className="italic font-normal text-gold">وضاعف هوامش ربحك الصافية</span>
           </h2>
@@ -64,7 +64,7 @@ export default function ROISection() {
           {/* Simulator Inputs */}
           <div className="lg:col-span-5 rounded-2xl border border-white/5 bg-white/[0.01] p-6 sm:p-8 flex flex-col justify-between space-y-6">
             <div>
-              <h3 className="font-serif text-lg font-semibold text-ivory mb-2 flex items-center gap-2">
+              <h3 className="font-primary text-lg font-semibold text-ivory mb-2 flex items-center gap-2">
                 <Receipt size={18} className="text-gold" />
                 المعطيات التشغيلية للفندق
               </h3>
@@ -73,7 +73,7 @@ export default function ROISection() {
 
             {/* Input 1: Number of Rooms */}
             <div className="space-y-2">
-              <div className="flex justify-between items-center text-xs font-mono">
+              <div className="flex justify-between items-center text-xs font-primary">
                 <span className="text-ivory/60">عدد غرف الفندق / الأجنحة:</span>
                 <span className="text-gold font-bold">{rooms} غرفة</span>
               </div>
@@ -90,7 +90,7 @@ export default function ROISection() {
 
             {/* Input 2: ADR */}
             <div className="space-y-2">
-              <div className="flex justify-between items-center text-xs font-mono">
+              <div className="flex justify-between items-center text-xs font-primary">
                 <span className="text-ivory/60">متوسط سعر الليلة (ADR):</span>
                 <span className="text-gold font-bold">{adr} ريال سعودي / درهم</span>
               </div>
@@ -107,7 +107,7 @@ export default function ROISection() {
 
             {/* Input 3: OTA Share */}
             <div className="space-y-2">
-              <div className="flex justify-between items-center text-xs font-mono">
+              <div className="flex justify-between items-center text-xs font-primary">
                 <span className="text-ivory/60">حصة الحجوزات الحالية عبر Booking / المنصات:</span>
                 <span className="text-gold font-bold">{otaRatio}%</span>
               </div>
@@ -122,7 +122,7 @@ export default function ROISection() {
               />
             </div>
 
-            <div className="border-t border-white/5 pt-4 text-[10px] text-ivory/40 leading-relaxed font-sans">
+            <div className="border-t border-white/5 pt-4 text-[10px] text-ivory/40 leading-relaxed font-primary">
               * تم حساب هذه التقديرات على أساس متوسط إشغال سنوي محافظ يبلغ 68%، وعمولة حجز تقليدية تبلغ 18% لصالح المنصات الخارجية.
             </div>
           </div>
@@ -133,29 +133,29 @@ export default function ROISection() {
             
             <div className="space-y-6 relative z-10">
               <div className="flex items-center justify-between">
-                <span className="rounded-full bg-gold/10 border border-gold/30 px-3 py-1 font-mono text-[9px] uppercase tracking-wider text-gold font-bold flex items-center gap-1">
+                <span className="rounded-full bg-gold/10 border border-gold/30 px-3 py-1 font-primary text-[9px] uppercase tracking-wider text-gold font-bold flex items-center gap-1">
                   <Sparkles size={10} />
                   التحليل المالي المقدر لنتائج الشراكة
                 </span>
-                <span className="font-mono text-[10px] text-ivory/40">سلس وقائم على البيانات</span>
+                <span className="font-primary text-[10px] text-ivory/40">سلس وقائم على البيانات</span>
               </div>
 
               {/* Box 1: Total Revenue */}
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-xl border border-white/5 bg-white/[0.01]">
-                  <span className="block text-[10px] text-ivory/40 font-mono uppercase">إجمالي إيرادات الغرف السنوية:</span>
-                  <span className="block text-lg md:text-xl font-serif font-bold text-ivory mt-1">{formatCurrency(yearlyRevenue)}</span>
+                  <span className="block text-[10px] text-ivory/40 font-primary uppercase">إجمالي إيرادات الغرف السنوية:</span>
+                  <span className="block text-lg md:text-xl font-primary font-bold text-ivory mt-1">{formatCurrency(yearlyRevenue)}</span>
                 </div>
                 <div className="p-4 rounded-xl border border-white/5 bg-white/[0.01]">
-                  <span className="block text-[10px] text-ivory/40 font-mono uppercase">العمولات المهدورة للمنصات حالياً:</span>
-                  <span className="block text-lg md:text-xl font-serif font-bold text-red-400 mt-1">{formatCurrency(yearlyOtaPaid)}</span>
+                  <span className="block text-[10px] text-ivory/40 font-primary uppercase">العمولات المهدورة للمنصات حالياً:</span>
+                  <span className="block text-lg md:text-xl font-primary font-bold text-red-400 mt-1">{formatCurrency(yearlyOtaPaid)}</span>
                 </div>
               </div>
 
               {/* Big central callout for savings */}
               <div className="bg-white/[0.02] border border-gold/30 rounded-xl p-6 text-center space-y-2">
-                <span className="block text-xs text-gold font-mono uppercase tracking-widest font-semibold">العوائد المالية المستردة مع لايتك (LYTC):</span>
-                <span className="block text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-white gold-gradient-text tracking-tight">
+                <span className="block text-xs text-gold font-primary uppercase tracking-widest font-semibold">العوائد المالية المستردة مع لايتك (LYTC):</span>
+                <span className="block text-2xl sm:text-4xl md:text-5xl font-primary font-bold text-white gold-gradient-text tracking-tight">
                   {formatCurrency(potentialLytcSavings)}
                 </span>
                 <p className="text-xs text-ivory/60 max-w-lg mx-auto">
@@ -168,7 +168,7 @@ export default function ROISection() {
               <span className="text-[11px] text-ivory/40 text-center sm:text-right">تتحقق هذه النتائج من خلال توطين التقنية، والسيادة على خرائط جوجل ومحركات البحث.</span>
               <a
                 href="#contact"
-                className="w-full sm:w-auto text-center rounded-lg bg-gold hover:bg-gold-light text-black px-5 py-2.5 text-xs font-mono font-bold tracking-wider transition-all cursor-pointer"
+                className="w-full sm:w-auto text-center rounded-lg bg-gold hover:bg-gold-light text-black px-5 py-2.5 text-xs font-primary font-bold tracking-wider transition-all cursor-pointer"
               >
                 احصل على تدقيق مالي لفندقك
               </a>
@@ -186,7 +186,7 @@ export default function ROISection() {
               <TrendingUp size={18} />
             </div>
             <div>
-              <h4 className="font-serif text-base font-semibold text-ivory">نمو الحجوزات المباشرة</h4>
+              <h4 className="font-primary text-base font-semibold text-ivory">نمو الحجوزات المباشرة</h4>
               <p className="text-xs text-ivory/50 mt-1 leading-relaxed">
                 زيادة بنسبة تتراوح بين <strong>+150% إلى +350%</strong> في مبيعات الغرف التي تتم مباشرة من موقع الفندق، مما يقلل بشكل ملموس من تكاليف الاستحواذ على النزلاء.
               </p>
@@ -199,7 +199,7 @@ export default function ROISection() {
               <Percent size={18} />
             </div>
             <div>
-              <h4 className="font-serif text-base font-semibold text-ivory">التخلص من عمولات الوسطاء</h4>
+              <h4 className="font-primary text-base font-semibold text-ivory">التخلص من عمولات الوسطاء</h4>
               <p className="text-xs text-ivory/50 mt-1 leading-relaxed">
                 انخفاض في نسبة الحجوزات القادمة عبر Booking والمنصات الخارجية بمعدل <strong>-60% إلى -80%</strong>، مما يعزز صافي الربح لكل غرفة متاحة.
               </p>
@@ -212,7 +212,7 @@ export default function ROISection() {
               <Smile size={18} />
             </div>
             <div>
-              <h4 className="font-serif text-base font-semibold text-ivory">ارتفاع رضا وتقييمات الضيوف</h4>
+              <h4 className="font-primary text-base font-semibold text-ivory">ارتفاع رضا وتقييمات الضيوف</h4>
               <p className="text-xs text-ivory/50 mt-1 leading-relaxed">
                 ترتفع تقييمات الفندق في رضا النزلاء لتصل إلى متوسط <strong>4.9 / 5.0</strong> بفضل دقة ومثالية بوابة الخدمات وبساطة التواصل الرقمي.
               </p>
@@ -225,7 +225,7 @@ export default function ROISection() {
               <Zap size={18} />
             </div>
             <div>
-              <h4 className="font-serif text-base font-semibold text-ivory">سرعة استجابة العمليات الفندقية</h4>
+              <h4 className="font-primary text-base font-semibold text-ivory">سرعة استجابة العمليات الفندقية</h4>
               <p className="text-xs text-ivory/50 mt-1 leading-relaxed">
                 توجيه فوري وآلي لجميع خدمات الغرف والصيانة والصيانة المجدولة في غضون <strong>أقل من 60 ثانية</strong>، مما يمنع فوضى وضياع طلبات النزلاء.
               </p>
@@ -238,7 +238,7 @@ export default function ROISection() {
               <Eye size={18} />
             </div>
             <div>
-              <h4 className="font-serif text-base font-semibold text-ivory">السيادة المطلقة على محركات البحث</h4>
+              <h4 className="font-primary text-base font-semibold text-ivory">السيادة المطلقة على محركات البحث</h4>
               <p className="text-xs text-ivory/50 mt-1 leading-relaxed">
                 استحواذ على الكلمات البحثية ذات النية الشرائية الفائقة في دول الخليج، مما يضمن تدفقاً مجانياً ومستداماً لزوار موقعك على مدار الساعة.
               </p>
@@ -251,7 +251,7 @@ export default function ROISection() {
               <Sparkles size={18} />
             </div>
             <div>
-              <h4 className="font-serif text-base font-semibold text-ivory">تكامل محلي ممتثل بنسبة 100%</h4>
+              <h4 className="font-primary text-base font-semibold text-ivory">تكامل محلي ممتثل بنسبة 100%</h4>
               <p className="text-xs text-ivory/50 mt-1 leading-relaxed">
                 تفعيل شبكات مدى وكي نت وبنفت وتأمين كامل متوافق مع لوائح الهيئة الوطنية للأمن السيبراني، مع استضافة سحابية محلية في الرياض أو دبي.
               </p>

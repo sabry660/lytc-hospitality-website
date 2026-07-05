@@ -65,7 +65,7 @@ export default function BookingJourney() {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section className="bg-dark-bg py-24 text-ivory border-t border-white/5 relative overflow-hidden font-sans" id="booking-journey">
+    <section className="bg-dark-bg py-24 text-ivory border-t border-white/5 relative overflow-hidden font-primary" id="booking-journey">
       {/* Background Mashrabiya Deco */}
       <div className="absolute inset-0 mashrabiya-overlay pointer-events-none" />
 
@@ -73,10 +73,10 @@ export default function BookingJourney() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold font-semibold">
+          <span className="font-primary text-[10px] uppercase tracking-[0.25em] text-gold font-semibold">
             دورة حياة تجربة الضيف الفاخرة
           </span>
-          <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+          <h2 className="mt-4 font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
             مسار رحلة الحجز النخبوية <br />
             <span className="italic font-normal text-gold">من البحث العفوي إلى النزيل الوفي</span>
           </h2>
@@ -108,7 +108,7 @@ export default function BookingJourney() {
 
                 {/* Node Badge */}
                 <div className="flex items-center justify-between w-full">
-                  <span className={`font-mono text-xs font-semibold ${isActive ? "text-gold" : "text-ivory/40"}`}>
+                  <span className={`font-primary text-xs font-semibold ${isActive ? "text-gold" : "text-ivory/40"}`}>
                     {step.phase}
                   </span>
                   <div className={`p-1.5 rounded-lg border transition-colors ${
@@ -120,13 +120,13 @@ export default function BookingJourney() {
 
                 {/* Title and details */}
                 <div className="space-y-1.5 mt-4">
-                  <h3 className={`font-serif text-sm font-semibold transition-colors ${isActive ? "text-gold" : "text-white"}`}>
+                  <h3 className={`font-primary text-sm font-semibold transition-colors ${isActive ? "text-gold" : "text-white"}`}>
                     {step.title}
                   </h3>
-                  <span className="block font-mono text-[8px] text-ivory/30 uppercase tracking-widest leading-none">
+                  <span className="block font-primary text-[8px] text-ivory/30 uppercase tracking-widest leading-none">
                     {step.englishTitle}
                   </span>
-                  <p className="text-[11px] text-ivory/50 leading-relaxed font-sans pt-1">
+                  <p className="text-[11px] text-ivory/50 leading-relaxed font-primary pt-1">
                     {step.desc}
                   </p>
                 </div>
@@ -139,10 +139,10 @@ export default function BookingJourney() {
         <div className="mt-12 rounded-2xl border border-white/5 bg-white/[0.01] p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 max-w-2xl">
             <div className="flex items-center gap-2 text-gold">
-              <span className="font-mono text-xs font-bold bg-gold/10 px-2 py-0.5 rounded border border-gold/20">
+              <span className="font-primary text-xs font-bold bg-gold/10 px-2 py-0.5 rounded border border-gold/20">
                 المرحلة النشطة {JOURNEY_STEPS[activeStep].phase}
               </span>
-              <span className="font-serif text-base font-semibold text-ivory">
+              <span className="font-primary text-base font-semibold text-ivory">
                 {JOURNEY_STEPS[activeStep].title} — {JOURNEY_STEPS[activeStep].englishTitle}
               </span>
             </div>
@@ -155,7 +155,7 @@ export default function BookingJourney() {
               const el = document.getElementById("contact");
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
-            className="w-full md:w-auto shrink-0 flex items-center justify-center gap-2 rounded-lg border border-gold/30 hover:bg-gold hover:text-black text-gold px-6 py-3 text-xs font-mono font-bold tracking-wider transition-all duration-300 cursor-pointer"
+            className="w-full md:w-auto shrink-0 flex items-center justify-center gap-2 rounded-lg border border-gold/30 hover:bg-gold hover:text-black text-gold px-6 py-3 text-xs font-primary font-bold tracking-wider transition-all duration-300 cursor-pointer"
           >
             <span>أريد هذه المنظومة لفندقي</span>
             <ArrowLeft size={13} />

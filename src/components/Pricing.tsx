@@ -67,7 +67,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
   };
 
   return (
-    <section className="bg-[#030303] py-36 text-ivory border-t border-white/5 font-sans relative overflow-hidden" id="pricing">
+    <section className="bg-[#030303] py-36 text-ivory border-t border-white/5 font-primary relative overflow-hidden" id="pricing">
       {/* Exquisite Arabesque and Radial Glow Overlays */}
       <div className="absolute inset-0 mashrabiya-overlay-fine opacity-[0.04] pointer-events-none" />
       <div className="absolute top-0 right-1/4 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-gold/5 to-transparent blur-[140px] pointer-events-none" />
@@ -82,7 +82,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 text-gold/80 font-mono text-xs uppercase tracking-[0.3em] bg-white/[0.02] border border-white/5 rounded-full px-5 py-2"
+            className="inline-flex items-center gap-2 text-gold/80 font-primary text-xs uppercase tracking-[0.3em] bg-white/[0.02] border border-white/5 rounded-full px-5 py-2"
           >
             <Sparkles size={11} className="animate-pulse text-gold" />
             <span>الباقات الاستراتيجية الحصرية</span>
@@ -93,10 +93,10 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-serif text-3xl sm:text-5xl md:text-6xl font-extralight leading-[1.15] text-white tracking-tight"
+            className="font-primary text-3xl sm:text-5xl md:text-6xl font-extralight leading-[1.15] text-white tracking-tight"
           >
             اختر الباقة المناسبة لرحلة <br />
-            <span className="font-normal gold-gradient-text italic font-serif">التحول الرقمي لفندقك</span>
+            <span className="font-normal gold-gradient-text italic font-primary">التحول الرقمي لفندقك</span>
           </motion.h2>
 
           <motion.p 
@@ -125,12 +125,12 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             <div className="space-y-8">
               <div className="flex justify-between items-start flex-row-reverse">
                 <div>
-                  <span className="text-[10px] font-mono text-gold/60 uppercase tracking-widest block mb-1">الخيار الأساسي الفاخر</span>
-                  <h3 className="font-serif text-3xl font-light text-white tracking-wide">
+                  <span className="text-[10px] font-primary text-gold/60 uppercase tracking-widest block mb-1">الخيار الأساسي الفاخر</span>
+                  <h3 className="font-primary text-3xl font-light text-white tracking-wide">
                     Launch
                   </h3>
                 </div>
-                <div className="h-10 w-10 rounded-lg border border-white/10 bg-white/5 flex items-center justify-center text-ivory/40 font-mono text-xs">
+                <div className="h-10 w-10 rounded-lg border border-white/10 bg-white/5 flex items-center justify-center text-ivory/40 font-primary text-xs">
                   01
                 </div>
               </div>
@@ -140,14 +140,14 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
               </p>
 
               <div className="border-y border-white/5 py-7 flex items-baseline justify-end gap-2 flex-row-reverse">
-                <span className="text-sm font-sans font-light text-ivory/40">ريال / شهرياً</span>
-                <span className="font-mono text-4xl font-light text-white tracking-tight">
+                <span className="text-sm font-primary font-light text-ivory/40">ريال / شهرياً</span>
+                <span className="font-primary text-4xl font-light text-white tracking-tight">
                   1,600
                 </span>
               </div>
 
               <div className="space-y-5">
-                <span className="block font-mono text-[9px] text-white/30 uppercase tracking-widest font-semibold">
+                <span className="block font-primary text-[9px] text-white/30 uppercase tracking-widest font-semibold">
                   المكونات المشمولة بالكامل:
                 </span>
                 
@@ -173,7 +173,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                 onClick={() => onOpenConsultation("Launch Package")}
                 className="w-full"
               >
-                <div className="w-full py-4 rounded-lg bg-white/5 border border-white/10 hover:border-gold/40 hover:bg-gold hover:text-black transition-all duration-300 text-center font-mono text-[10px] uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer text-white hover:text-black shadow-md">
+                <div className="w-full py-4 rounded-lg bg-white/5 border border-white/10 hover:border-gold/40 hover:bg-gold hover:text-black transition-all duration-300 text-center font-primary text-[10px] uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer text-white hover:text-black shadow-md">
                   <span>ابدأ الآن</span>
                   <ArrowLeft size={12} className="transition-transform group-hover:-translate-x-1" />
                 </div>
@@ -194,7 +194,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-gold/[0.04] to-transparent pointer-events-none" />
 
             {/* Luxurious Floating Badge */}
-            <div className="absolute top-5 left-5 flex items-center gap-1.5 rounded-full bg-gold/20 border border-gold/50 px-4 py-2 font-sans text-[9px] tracking-widest text-gold font-bold shadow-lg shadow-gold/20 backdrop-blur-md animate-pulse">
+            <div className="absolute top-5 left-5 flex items-center gap-1.5 rounded-full bg-gold/20 border border-gold/50 px-4 py-2 font-primary text-[9px] tracking-widest text-gold font-bold shadow-lg shadow-gold/20 backdrop-blur-md animate-pulse">
               <Sparkles size={10} className="text-gold" />
               <span>الأكثر اختيارًا</span>
             </div>
@@ -202,12 +202,12 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             <div className="space-y-8">
               <div className="flex justify-between items-start flex-row-reverse">
                 <div>
-                  <span className="text-[10px] font-mono text-gold uppercase tracking-widest block mb-1 font-semibold">تسريع وتنمية الحجوزات</span>
-                  <h3 className="font-serif text-3xl font-normal text-white tracking-wide">
+                  <span className="text-[10px] font-primary text-gold uppercase tracking-widest block mb-1 font-semibold">تسريع وتنمية الحجوزات</span>
+                  <h3 className="font-primary text-3xl font-normal text-white tracking-wide">
                     Growth
                   </h3>
                 </div>
-                <div className="h-10 w-10 rounded-lg border border-gold/30 bg-gold/10 flex items-center justify-center text-gold font-mono text-xs">
+                <div className="h-10 w-10 rounded-lg border border-gold/30 bg-gold/10 flex items-center justify-center text-gold font-primary text-xs">
                   02
                 </div>
               </div>
@@ -217,14 +217,14 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
               </p>
 
               <div className="border-y border-gold/10 py-7 flex items-baseline justify-end gap-2 flex-row-reverse">
-                <span className="text-sm font-sans font-light text-gold/60">ريال / شهرياً</span>
-                <span className="font-mono text-4xl font-bold text-gold tracking-tight">
+                <span className="text-sm font-primary font-light text-gold/60">ريال / شهرياً</span>
+                <span className="font-primary text-4xl font-bold text-gold tracking-tight">
                   1,800
                 </span>
               </div>
 
               <div className="space-y-5">
-                <span className="block font-mono text-[9px] text-gold/60 uppercase tracking-widest font-semibold">
+                <span className="block font-primary text-[9px] text-gold/60 uppercase tracking-widest font-semibold">
                   المكونات المشمولة بالكامل:
                 </span>
                 
@@ -252,7 +252,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                 onClick={() => onOpenConsultation("Growth Package")}
                 className="w-full"
               >
-                <div className="w-full py-4.5 rounded-lg bg-gold hover:bg-gold-light text-black transition-all duration-300 text-center font-mono text-[10px] uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer shadow-xl shadow-gold/20 hover:scale-[1.01]">
+                <div className="w-full py-4.5 rounded-lg bg-gold hover:bg-gold-light text-black transition-all duration-300 text-center font-primary text-[10px] uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer shadow-xl shadow-gold/20 hover:scale-[1.01]">
                   <span>ابدأ رحلة النمو</span>
                   <ArrowLeft size={12} className="transition-transform group-hover:-translate-x-1" />
                 </div>
@@ -276,7 +276,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             <div className="absolute inset-0 rounded-2xl p-[1px] bg-gradient-to-b from-gold/30 via-white/5 to-gold/30 pointer-events-none group-hover:from-gold/50 transition-all duration-500" />
 
             {/* Premium luxury badge */}
-            <div className="absolute top-5 left-5 flex items-center gap-1.5 rounded-full bg-white/5 border border-gold/40 px-4 py-2 font-sans text-[9px] tracking-widest text-gold font-bold backdrop-blur-md">
+            <div className="absolute top-5 left-5 flex items-center gap-1.5 rounded-full bg-white/5 border border-gold/40 px-4 py-2 font-primary text-[9px] tracking-widest text-gold font-bold backdrop-blur-md">
               <Award size={10} className="text-gold animate-bounce" />
               <span>الحل المتكامل النخبوّي</span>
             </div>
@@ -284,12 +284,12 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             <div className="space-y-8 relative z-10">
               <div className="flex justify-between items-start flex-row-reverse">
                 <div>
-                  <span className="text-[10px] font-mono text-gold/80 uppercase tracking-widest block mb-1 font-semibold">السيادة والتحول الشامل</span>
-                  <h3 className="font-serif text-3xl font-light text-white tracking-wide">
+                  <span className="text-[10px] font-primary text-gold/80 uppercase tracking-widest block mb-1 font-semibold">السيادة والتحول الشامل</span>
+                  <h3 className="font-primary text-3xl font-light text-white tracking-wide">
                     Elite
                   </h3>
                 </div>
-                <div className="h-10 w-10 rounded-lg border border-gold/20 bg-gold/5 flex items-center justify-center text-gold/70 font-mono text-xs">
+                <div className="h-10 w-10 rounded-lg border border-gold/20 bg-gold/5 flex items-center justify-center text-gold/70 font-primary text-xs">
                   03
                 </div>
               </div>
@@ -299,14 +299,14 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
               </p>
 
               <div className="border-y border-white/5 py-7 flex items-baseline justify-end gap-2 flex-row-reverse">
-                <span className="text-sm font-sans font-light text-ivory/40">ريال / شهرياً</span>
-                <span className="font-mono text-4xl font-light text-white tracking-tight">
+                <span className="text-sm font-primary font-light text-ivory/40">ريال / شهرياً</span>
+                <span className="font-primary text-4xl font-light text-white tracking-tight">
                   2,000
                 </span>
               </div>
 
               <div className="space-y-4">
-                <span className="block font-mono text-[9px] text-gold/60 uppercase tracking-widest font-semibold">
+                <span className="block font-primary text-[9px] text-gold/60 uppercase tracking-widest font-semibold">
                   المكونات المشمولة بالكامل:
                 </span>
                 
@@ -337,7 +337,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                 onClick={() => onOpenConsultation("Elite Package")}
                 className="w-full"
               >
-                <div className="w-full py-4 rounded-lg bg-gold hover:bg-gold-light text-black transition-all duration-300 text-center font-mono text-[10px] uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-gold/10 hover:scale-[1.01]">
+                <div className="w-full py-4 rounded-lg bg-gold hover:bg-gold-light text-black transition-all duration-300 text-center font-primary text-[10px] uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-gold/10 hover:scale-[1.01]">
                   <span>احجز استشارة مجانية</span>
                   <ArrowLeft size={12} className="transition-transform group-hover:-translate-x-1" />
                 </div>
@@ -347,7 +347,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                 href="https://wa.me/201070853978"
                 target="_blank"
                 rel="noreferrer"
-                className="w-full py-3.5 rounded-lg border border-emerald-500/20 bg-emerald-500/5 hover:border-emerald-500/40 hover:bg-emerald-500/10 hover:text-emerald-400 font-mono text-[10px] tracking-widest transition-all duration-300 flex items-center justify-center gap-2 font-bold"
+                className="w-full py-3.5 rounded-lg border border-emerald-500/20 bg-emerald-500/5 hover:border-emerald-500/40 hover:bg-emerald-500/10 hover:text-emerald-400 font-primary text-[10px] tracking-widest transition-all duration-300 flex items-center justify-center gap-2 font-bold"
               >
                 <MessageSquare size={13} className="text-emerald-500" />
                 <span>تحدث معنا عبر واتساب</span>
@@ -360,8 +360,8 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
         {/* PACKAGE COMPARISON TABLE WITH AWARD-WINNING MINIMALISM */}
         <div className="my-36 text-right relative">
           <div className="text-center max-w-xl mx-auto mb-20 space-y-3">
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold font-bold block mb-2">الشفافية المطلقة والوضوح</span>
-            <h3 className="font-serif text-3xl font-light text-white tracking-tight">مقارنة شاملة بين الباقات والمزايا</h3>
+            <span className="font-primary text-[10px] uppercase tracking-[0.3em] text-gold font-bold block mb-2">الشفافية المطلقة والوضوح</span>
+            <h3 className="font-primary text-3xl font-light text-white tracking-tight">مقارنة شاملة بين الباقات والمزايا</h3>
             <p className="text-xs text-ivory/50 leading-relaxed font-light">
               مقارنة مجهرية دقيقة لخصائص المنظومات البرمجية والاستشارية التي نقدمها لفندقكم الفاخر.
             </p>
@@ -371,10 +371,10 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             <table className="w-full border-collapse text-right min-w-[750px]">
               <thead>
                 <tr className="border-b border-white/10 bg-white/[0.02]">
-                  <th className="py-7 px-10 text-sm font-serif font-light text-white w-2/5">المنظومة والخدمة التكنولوجية</th>
-                  <th className="py-7 px-6 text-center text-[10px] font-mono tracking-[0.2em] text-gold uppercase">Launch</th>
-                  <th className="py-7 px-6 text-center text-[10px] font-mono tracking-[0.2em] text-gold uppercase bg-gold/5 border-x border-white/5">Growth</th>
-                  <th className="py-7 px-6 text-center text-[10px] font-mono tracking-[0.2em] text-gold uppercase">Elite</th>
+                  <th className="py-7 px-10 text-sm font-primary font-light text-white w-2/5">المنظومة والخدمة التكنولوجية</th>
+                  <th className="py-7 px-6 text-center text-[10px] font-primary tracking-[0.2em] text-gold uppercase">Launch</th>
+                  <th className="py-7 px-6 text-center text-[10px] font-primary tracking-[0.2em] text-gold uppercase bg-gold/5 border-x border-white/5">Growth</th>
+                  <th className="py-7 px-6 text-center text-[10px] font-primary tracking-[0.2em] text-gold uppercase">Elite</th>
                 </tr>
               </thead>
               <tbody>
@@ -384,8 +384,8 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                     className={`border-b border-white/5 hover:bg-white/[0.015] transition-colors duration-200 group ${index % 2 === 0 ? "bg-white/[0.003]" : ""}`}
                   >
                     <td className="py-6 px-10">
-                      <div className="text-xs font-sans text-white font-medium mb-1">{feat.name}</div>
-                      <div className="text-[10px] font-sans text-ivory/40 leading-relaxed font-light">{feat.detail}</div>
+                      <div className="text-xs font-primary text-white font-medium mb-1">{feat.name}</div>
+                      <div className="text-[10px] font-primary text-ivory/40 leading-relaxed font-light">{feat.detail}</div>
                     </td>
                     
                     {/* Launch */}
@@ -400,7 +400,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                           <Check size={11} className="stroke-[3]" />
                         </motion.div>
                       ) : (
-                        <span className="text-white/10 font-mono text-sm">-</span>
+                        <span className="text-white/10 font-primary text-sm">-</span>
                       )}
                     </td>
 
@@ -416,7 +416,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                           <Check size={11} className="stroke-[3]" />
                         </motion.div>
                       ) : (
-                        <span className="text-white/10 font-mono text-sm">-</span>
+                        <span className="text-white/10 font-primary text-sm">-</span>
                       )}
                     </td>
 
@@ -432,7 +432,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                           <Check size={11} className="stroke-[3]" />
                         </motion.div>
                       ) : (
-                        <span className="text-white/10 font-mono text-sm">-</span>
+                        <span className="text-white/10 font-primary text-sm">-</span>
                       )}
                     </td>
                   </tr>
@@ -445,10 +445,10 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
         {/* WHY THESE PACKAGES SECTION (Ritz-Carlton Level Business Philosophy) */}
         <div className="border-t border-white/5 pt-36">
           <div className="text-center max-w-3xl mx-auto mb-24 space-y-5">
-            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold font-bold">فلسفتنا وراء هيكلة الباقات</span>
-            <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-white leading-tight tracking-tight">
+            <span className="font-primary text-[10px] uppercase tracking-[0.25em] text-gold font-bold">فلسفتنا وراء هيكلة الباقات</span>
+            <h3 className="font-primary text-3xl sm:text-4xl md:text-5xl font-light text-white leading-tight tracking-tight">
               لماذا صُممت هذه الباقات حول <br />
-              <span className="font-normal gold-gradient-text italic font-serif">نتائج الأعمال ومؤشرات الأداء؟</span>
+              <span className="font-normal gold-gradient-text italic font-primary">نتائج الأعمال ومؤشرات الأداء؟</span>
             </h3>
             <p className="text-xs sm:text-sm md:text-base text-ivory/50 leading-relaxed font-light max-w-2xl mx-auto">
               الفارق المنهجي بيننا وبين شركات البرمجة ووكالات التسويق التقليدية هو التركيز الصارم على حوكمة وتنمية ميزانيتك الفندقية واسترداد تدفقات النقد المفقودة.
@@ -501,7 +501,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-gold group-hover:bg-gold group-hover:text-black transition-all duration-300 shadow-md">
                     <IconComp size={20} />
                   </div>
-                  <h4 className="font-serif text-lg font-normal text-white">{outcome.title}</h4>
+                  <h4 className="font-primary text-lg font-normal text-white">{outcome.title}</h4>
                   <p className="text-xs sm:text-sm text-ivory/60 leading-relaxed font-light">{outcome.description}</p>
                 </motion.div>
               );

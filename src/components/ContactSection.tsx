@@ -59,7 +59,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="bg-[#050505] py-24 text-ivory border-t border-white/5 relative overflow-hidden font-sans" id="contact">
+    <section className="bg-[#050505] py-24 text-ivory border-t border-white/5 relative overflow-hidden font-primary" id="contact">
       {/* Visual background element */}
       <div className="absolute bottom-0 right-0 h-96 w-96 bg-radial from-gold/5 to-transparent rounded-full pointer-events-none blur-3xl" />
       <div className="absolute inset-0 mashrabiya-overlay pointer-events-none" />
@@ -68,10 +68,10 @@ export default function ContactSection() {
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold font-semibold">
+          <span className="font-primary text-[10px] uppercase tracking-[0.25em] text-gold font-semibold">
             طلب دراسة جدوى فندقية ومجلس استشاري مغلق
           </span>
-          <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+          <h2 className="mt-4 font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
             ابدأ رحلة سيادتك <span className="italic font-normal text-gold">الرقمية اليوم</span>
           </h2>
           <p className="mt-4 text-sm text-ivory/60 leading-relaxed font-light">
@@ -93,7 +93,7 @@ export default function ContactSection() {
                 <div className="h-16 w-16 bg-gold/10 border border-gold/30 rounded-full flex items-center justify-center text-gold mx-auto">
                   <Sparkles size={28} className="animate-drift" />
                 </div>
-                <h3 className="font-serif text-xl font-bold text-white">تم استلام طلب الاستشارة بنجاح</h3>
+                <h3 className="font-primary text-xl font-bold text-white">تم استلام طلب الاستشارة بنجاح</h3>
                 <p className="text-xs text-ivory/60 max-w-md mx-auto leading-relaxed font-light">
                   نشكرك على ثقتك بـ لايتك (LYTC). تم تحويلك تلقائياً لواتساب لإرسال الرسالة الجاهزة. إذا لم تفتح صفحة المحادثة، يرجى الضغط على الزر أدناه لإرسال طلب الاستشارة مباشرة عبر واتساب.
                 </p>
@@ -103,7 +103,7 @@ export default function ContactSection() {
                       href={lastWhatsappUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-lg bg-green-600 text-white hover:bg-green-500 px-6 py-2.5 text-xs font-mono font-bold tracking-wider transition-all cursor-pointer flex items-center justify-center gap-2"
+                      className="rounded-lg bg-green-600 text-white hover:bg-green-500 px-6 py-2.5 text-xs font-primary font-bold tracking-wider transition-all cursor-pointer flex items-center justify-center gap-2"
                     >
                       <MessageSquare size={14} />
                       <span>إرسال الرسالة عبر واتساب</span>
@@ -111,7 +111,7 @@ export default function ContactSection() {
                   )}
                   <button
                     onClick={() => setIsSubmitted(false)}
-                    className="rounded-lg border border-white/10 text-ivory/70 px-6 py-2.5 text-xs font-mono hover:bg-white/5 transition-all cursor-pointer"
+                    className="rounded-lg border border-white/10 text-ivory/70 px-6 py-2.5 text-xs font-primary hover:bg-white/5 transition-all cursor-pointer"
                   >
                     تقديم طلب استشارة جديد
                   </button>
@@ -123,7 +123,7 @@ export default function ContactSection() {
                   
                   {/* Hotel Name */}
                   <div className="space-y-1.5">
-                    <label className="block text-xs font-mono text-ivory/60">اسم الفندق / المنتجع:</label>
+                    <label className="block text-xs font-primary text-ivory/60">اسم الفندق / المنتجع:</label>
                     <div className="relative">
                       <input
                         required
@@ -139,7 +139,7 @@ export default function ContactSection() {
 
                   {/* Manager Name */}
                   <div className="space-y-1.5">
-                    <label className="block text-xs font-mono text-ivory/60">اسم المدير المسؤول / المالك:</label>
+                    <label className="block text-xs font-primary text-ivory/60">اسم المدير المسؤول / المالك:</label>
                     <div className="relative">
                       <input
                         required
@@ -159,7 +159,7 @@ export default function ContactSection() {
                   
                   {/* Country Selection */}
                   <div className="space-y-1.5">
-                    <label className="block text-xs font-mono text-ivory/60">الدولة:</label>
+                    <label className="block text-xs font-primary text-ivory/60">الدولة:</label>
                     <div className="relative">
                       <select
                         value={formData.country}
@@ -179,7 +179,7 @@ export default function ContactSection() {
 
                   {/* Phone */}
                   <div className="space-y-1.5">
-                    <label className="block text-xs font-mono text-ivory/60">رقم الهاتف للاتصال المباشر:</label>
+                    <label className="block text-xs font-primary text-ivory/60">رقم الهاتف للاتصال المباشر:</label>
                     <div className="relative">
                       <input
                         required
@@ -200,7 +200,7 @@ export default function ContactSection() {
                   
                   {/* Email */}
                   <div className="space-y-1.5">
-                    <label className="block text-xs font-mono text-ivory/60">البريد الإلكتروني المهني:</label>
+                    <label className="block text-xs font-primary text-ivory/60">البريد الإلكتروني المهني:</label>
                     <div className="relative">
                       <input
                         required
@@ -217,7 +217,7 @@ export default function ContactSection() {
 
                   {/* Number of Rooms */}
                   <div className="space-y-1.5">
-                    <label className="block text-xs font-mono text-ivory/60">إجمالي عدد الغرف والأجنحة:</label>
+                    <label className="block text-xs font-primary text-ivory/60">إجمالي عدد الغرف والأجنحة:</label>
                     <div className="relative">
                       <input
                         required
@@ -235,7 +235,7 @@ export default function ContactSection() {
 
                 {/* Current Website URL */}
                 <div className="space-y-1.5">
-                  <label className="block text-xs font-mono text-ivory/60">رابط موقع الفندق الحالي (إن وجد):</label>
+                  <label className="block text-xs font-primary text-ivory/60">رابط موقع الفندق الحالي (إن وجد):</label>
                   <div className="relative">
                     <input
                       type="url"
@@ -251,7 +251,7 @@ export default function ContactSection() {
 
                 {/* Message */}
                 <div className="space-y-1.5">
-                  <label className="block text-xs font-mono text-ivory/60">تفاصيل إضافية أو عقبات تشغيلية تواجهونها:</label>
+                  <label className="block text-xs font-primary text-ivory/60">تفاصيل إضافية أو عقبات تشغيلية تواجهونها:</label>
                   <textarea
                     rows={4}
                     placeholder="اكتب هنا التحديات الحالية (مثل: عمولات Booking العالية، بطء الموقع الحالي، عدم الظهور على خرائط جوجل، ضغط المكالمات على الاستقبال...)"
@@ -266,7 +266,7 @@ export default function ContactSection() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black py-3.5 text-xs font-mono font-bold tracking-wider transition-all duration-300 shadow-xl shadow-gold/10 cursor-pointer disabled:opacity-50"
+                    className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black py-3.5 text-xs font-primary font-bold tracking-wider transition-all duration-300 shadow-xl shadow-gold/10 cursor-pointer disabled:opacity-50"
                   >
                     <span>{isSubmitting ? "جاري الإرسال وتأمين الطلب..." : "احجز استشارة مجانية الآن"}</span>
                     <Calendar size={13} />
@@ -276,7 +276,7 @@ export default function ContactSection() {
                     href="https://wa.me/201070853978"
                     target="_blank"
                     rel="noreferrer"
-                    className="w-full sm:w-auto flex items-center justify-center gap-2.5 rounded-lg border border-green-500/30 bg-green-500/10 hover:bg-green-500/20 text-green-400 font-bold px-6 py-3.5 text-xs font-mono tracking-wider transition-all duration-300"
+                    className="w-full sm:w-auto flex items-center justify-center gap-2.5 rounded-lg border border-green-500/30 bg-green-500/10 hover:bg-green-500/20 text-green-400 font-bold px-6 py-3.5 text-xs font-primary tracking-wider transition-all duration-300"
                   >
                     <MessageSquare size={14} />
                     <span>تحدث معنا عبر واتساب</span>
@@ -292,11 +292,11 @@ export default function ContactSection() {
             
             {/* SLA Statement */}
             <div className="p-6 rounded-2xl border border-gold/15 bg-gold/[0.01] space-y-3">
-              <span className="font-mono text-[9px] uppercase tracking-wider text-gold font-bold flex items-center gap-1">
+              <span className="font-primary text-[9px] uppercase tracking-wider text-gold font-bold flex items-center gap-1">
                 <Sparkles size={11} />
                 مستوى حماية وسرية البيانات
               </span>
-              <h4 className="font-serif text-base font-semibold text-white">اتفاقية السرية التامة للفنادق</h4>
+              <h4 className="font-primary text-base font-semibold text-white">اتفاقية السرية التامة للفنادق</h4>
               <p className="text-xs text-ivory/60 leading-relaxed font-light">
                 نحن نتفهم تماماً حساسية التقارير التشغيلية ومعدلات الإشغال وإيرادات الغرف المتاحة (RevPAR) للفنادق المستقلة. جميع المداولات وجلسات الاستماع والتقارير المتبادلة تتم تحت مظلة تلتزم بالسرية المطلقة وعدم الكشف عن أسرار الفنادق للمنافسين المحليين.
               </p>
@@ -304,7 +304,7 @@ export default function ContactSection() {
 
             {/* Direct Support Card */}
             <div className="p-6 rounded-2xl border border-white/5 bg-white/[0.01] space-y-4">
-              <h4 className="font-serif text-base font-semibold text-white">الاستجابة والاتصال المباشر</h4>
+              <h4 className="font-primary text-base font-semibold text-white">الاستجابة والاتصال المباشر</h4>
               <ul className="space-y-3.5">
                 <li className="flex items-start gap-2.5 text-xs">
                   <ShieldCheck size={15} className="text-gold shrink-0 mt-0.5" />
@@ -326,9 +326,9 @@ export default function ContactSection() {
             {/* FAQ Quick block */}
             <div className="p-6 rounded-2xl border border-white/5 bg-white/[0.01] text-center space-y-2">
               <HelpCircle size={20} className="text-gold mx-auto animate-drift" />
-              <h5 className="font-serif text-sm font-semibold text-white">هل لديك تساؤلات عاجلة؟</h5>
+              <h5 className="font-primary text-sm font-semibold text-white">هل لديك تساؤلات عاجلة؟</h5>
               <p className="text-xs text-ivory/50">راجع أرشيف استشاراتنا الموسع في الأسفل لتجد إجابات حول ربط الـ PMS وبوابات الدفع والامتثال.</p>
-              <a href="#faq" className="inline-block text-xs font-mono text-gold hover:underline pt-1">تصفح أرشيف الاستشارات ←</a>
+              <a href="#faq" className="inline-block text-xs font-primary text-gold hover:underline pt-1">تصفح أرشيف الاستشارات ←</a>
             </div>
 
           </div>

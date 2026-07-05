@@ -33,7 +33,7 @@ export default function LoadingScreen() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 1.05, filter: "blur(10px)" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="fixed inset-0 z-[10000] flex flex-col items-center justify-center bg-black font-sans select-none"
+          className="fixed inset-0 z-[10000] flex flex-col items-center justify-center bg-black font-primary select-none"
           id="luxury-loader"
         >
           {/* Subtle Aurora gold light effect in center background */}
@@ -62,10 +62,10 @@ export default function LoadingScreen() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-2 text-center"
             >
-              <h1 className="font-serif text-xl sm:text-2xl font-bold uppercase tracking-[0.35em] text-white">
+              <h1 className="font-primary text-xl sm:text-2xl font-bold uppercase tracking-[0.35em] text-white">
                 LYTC
               </h1>
-              <span className="block font-mono text-[9px] uppercase tracking-widest text-gold font-semibold">
+              <span className="block font-primary text-[9px] uppercase tracking-widest text-gold font-semibold">
                 LYTC Hospitality Partners
               </span>
             </motion.div>
@@ -80,7 +80,7 @@ export default function LoadingScreen() {
                     animate={{ opacity: 0.6, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.3 }}
-                    className="text-[10px] text-ivory/60 font-mono tracking-wider"
+                    className="text-[10px] text-ivory/60 font-primary tracking-wider"
                   >
                     تهيئة محرك الحجز المباشر السويسري...
                   </motion.span>
@@ -91,7 +91,7 @@ export default function LoadingScreen() {
                     animate={{ opacity: 0.6, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.3 }}
-                    className="text-[10px] text-ivory/60 font-mono tracking-wider"
+                    className="text-[10px] text-ivory/60 font-primary tracking-wider"
                   >
                     بناء الهوية الرقمية والمسارات السينمائية...
                   </motion.span>
@@ -102,7 +102,7 @@ export default function LoadingScreen() {
                     animate={{ opacity: 0.6, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.3 }}
-                    className="text-[10px] text-ivory/60 font-mono tracking-wider"
+                    className="text-[10px] text-ivory/60 font-primary tracking-wider"
                   >
                     تحسين الامتثال لسرعة العرض والاستجابة السحابية...
                   </motion.span>
@@ -113,7 +113,7 @@ export default function LoadingScreen() {
                     animate={{ opacity: 0.9, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.3 }}
-                    className="text-[10px] text-gold font-mono tracking-wider flex items-center gap-1"
+                    className="text-[10px] text-gold font-primary tracking-wider flex items-center gap-1"
                   >
                     <Sparkles size={10} className="animate-spin" />
                     اكتمال السيادة والضيافة الرقمية الفاخرة
@@ -123,7 +123,7 @@ export default function LoadingScreen() {
             </div>
 
             {/* Monospace Progress percentage counter */}
-            <div className="mt-10 font-mono text-xs text-gold/50 flex items-center gap-1.5 justify-center">
+            <div className="mt-10 font-primary text-xs text-gold/50 flex items-center gap-1.5 justify-center">
               <span className="inline-block tracking-widest font-semibold text-lg text-gold text-right w-12">
                 {Math.round(progress)}%
               </span>

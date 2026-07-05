@@ -89,7 +89,7 @@ export default function Process() {
   const CurrentIcon = PROCESS_STEPS[activeStep].icon;
 
   return (
-    <section className="bg-[#050505] py-24 text-ivory border-t border-white/5 font-sans relative overflow-hidden" id="process">
+    <section className="bg-[#050505] py-24 text-ivory border-t border-white/5 font-primary relative overflow-hidden" id="process">
       {/* Decorative fine background matrix */}
       <div className="absolute inset-0 mashrabiya-overlay pointer-events-none opacity-30" />
 
@@ -97,12 +97,12 @@ export default function Process() {
         
         {/* Header with split text anim */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold font-semibold block">
+          <span className="font-primary text-[10px] uppercase tracking-[0.25em] text-gold font-semibold block">
             دورة التشغيل والنمو المالي الرقمي المتكاملة
           </span>
           <CinematicTitle
             text="مسار شراكتنا الفندقية الملتزمة بالنتائج"
-            className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight text-white inline-block text-center w-full"
+            className="mt-4 font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight text-white inline-block text-center w-full"
           />
           <p className="mt-4 text-xs sm:text-sm md:text-base text-ivory/60 leading-relaxed font-light">
             نحن نتكفل بكافة مفاصل التحول الرقمي لفندقك المستقل. لا داعي لتشتيت ذهن إدارة الفندق بين مطور معزول، ومصمم غير متخصص، ومسوق يطارد أرقاماً وهمية. نحن الشريك الواحد الموحد.
@@ -152,7 +152,7 @@ export default function Process() {
                         <span className="absolute inset-0 rounded-full border border-gold animate-ping opacity-75" />
                       )}
                       
-                      <span className="font-mono text-xs font-semibold">{step.phase}</span>
+                      <span className="font-primary text-xs font-semibold">{step.phase}</span>
                     </motion.div>
                   </button>
 
@@ -192,14 +192,14 @@ export default function Process() {
                 {/* Big Animated Icon */}
                 <div className="h-20 w-20 rounded-2xl border border-gold/20 bg-gold/5 flex items-center justify-center text-gold relative shadow-xl shadow-black">
                   <CurrentIcon size={32} className="animate-drift" />
-                  <span className="absolute -top-3 -left-3 font-mono text-[10px] text-gold-muted font-bold bg-[#141414] border border-gold/20 px-2.5 py-0.5 rounded-full shadow">
+                  <span className="absolute -top-3 -left-3 font-primary text-[10px] text-gold-muted font-bold bg-[#141414] border border-gold/20 px-2.5 py-0.5 rounded-full shadow">
                     المرحلة {PROCESS_STEPS[activeStep].phase}
                   </span>
                 </div>
 
                 <div className="text-center md:text-right pt-2">
-                  <span className="font-mono text-[10px] text-gold uppercase tracking-widest font-bold block">دليل الأثر</span>
-                  <span className="text-xs text-ivory/50 mt-1 block font-sans">
+                  <span className="font-primary text-[10px] text-gold uppercase tracking-widest font-bold block">دليل الأثر</span>
+                  <span className="text-xs text-ivory/50 mt-1 block font-primary">
                     {PROCESS_STEPS[activeStep].detail}
                   </span>
                 </div>
@@ -211,12 +211,12 @@ export default function Process() {
                 <div>
                   <div className="flex items-center gap-2 justify-start flex-row-reverse text-right mb-2">
                     <Sparkles size={14} className="text-gold" />
-                    <span className="font-mono text-[10px] tracking-widest text-gold font-bold">مستندات التنفيذ العملي</span>
+                    <span className="font-primary text-[10px] tracking-widest text-gold font-bold">مستندات التنفيذ العملي</span>
                   </div>
-                  <h3 className="font-serif text-2xl md:text-3xl font-semibold text-white">
+                  <h3 className="font-primary text-2xl md:text-3xl font-semibold text-white">
                     {PROCESS_STEPS[activeStep].title}
                   </h3>
-                  <p className="mt-4 text-sm sm:text-base text-ivory/70 leading-relaxed font-sans font-light">
+                  <p className="mt-4 text-sm sm:text-base text-ivory/70 leading-relaxed font-primary font-light">
                     {PROCESS_STEPS[activeStep].description}
                   </p>
                 </div>
@@ -227,7 +227,7 @@ export default function Process() {
                   {/* Visual auto-ticking timer indicator */}
                   <div className="flex items-center gap-1.5">
                     <div className="h-1.5 w-1.5 rounded-full bg-gold animate-ping" />
-                    <span className="font-mono text-[9px] text-gold uppercase tracking-wider font-bold">
+                    <span className="font-primary text-[9px] text-gold uppercase tracking-wider font-bold">
                       {isAutoPlaying ? "عرض تسلسلي مستمر" : "عرض مخصص يدوي"}
                     </span>
                   </div>

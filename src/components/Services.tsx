@@ -78,7 +78,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
   };
 
   return (
-    <div className="bg-[#080808] text-ivory font-sans">
+    <div className="bg-[#080808] text-ivory font-primary">
       
       {/* SECTION 1: LUXURY WEBSITE DESIGN */}
       <section className="relative py-28 border-t border-white/5 overflow-hidden" id="luxury-website">
@@ -87,12 +87,12 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
           <div className="grid gap-12 lg:grid-cols-12 items-center">
             {/* Left text column */}
             <div className="lg:col-span-5 space-y-6">
-              <div className="flex items-center gap-2 text-gold font-mono text-xs uppercase tracking-widest">
+              <div className="flex items-center gap-2 text-gold font-primary text-xs uppercase tracking-widest">
                 <Sparkles size={14} />
                 <span>واجهات رقمية مخصصة للنخبة</span>
               </div>
               
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+              <h2 className="font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
                 موقع فندقك يصبح <br />
                 <span className="italic font-normal text-gold">أقوى رجل مبيعات لديك</span>
               </h2>
@@ -102,7 +102,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
               </p>
 
               {/* Bullet Features */}
-              <div className="grid grid-cols-2 gap-x-4 gap-y-3 pt-2 font-serif text-xs">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-3 pt-2 font-primary text-xs">
                 {[
                   "تصميم راقٍ بمستوى أمان", "ثنائية اللغة (عربي/إنجليزي)", "واجهة حجز فائقة السرعة للموبايل",
                   "سرعة تحميل أقل من ثانية", "ربط مرن مع أنظمة إدارة الفنادق (PMS)", "بوابات دفع محلية متكاملة",
@@ -118,21 +118,21 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
               {/* Case Study Callout */}
               <div className="rounded-xl border border-gold/15 bg-gold/[0.02] p-5 space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="font-serif text-sm font-semibold text-gold">دراسة نجاح: منتجع رمال عمان</span>
-                  <span className="font-mono text-[9px] uppercase tracking-widest text-gold bg-gold/5 px-2 py-0.5 rounded border border-gold/20">نتائج موثقة</span>
+                  <span className="font-primary text-sm font-semibold text-gold">دراسة نجاح: منتجع رمال عمان</span>
+                  <span className="font-primary text-[9px] uppercase tracking-widest text-gold bg-gold/5 px-2 py-0.5 rounded border border-gold/20">نتائج موثقة</span>
                 </div>
                 <div className="mt-4 grid grid-cols-3 gap-2 text-center">
                   <div className="border-l border-white/5">
-                    <div className="font-serif text-xl font-bold text-gold">+٤٢٪</div>
-                    <div className="font-mono text-[9px] text-ivory/40 uppercase tracking-wider mt-0.5">الحجوزات المباشرة</div>
+                    <div className="font-primary text-xl font-bold text-gold">+٤٢٪</div>
+                    <div className="font-primary text-[9px] text-ivory/40 uppercase tracking-wider mt-0.5">الحجوزات المباشرة</div>
                   </div>
                   <div className="border-l border-white/5">
-                    <div className="font-serif text-xl font-bold text-gold">+٧١٪</div>
-                    <div className="font-mono text-[9px] text-ivory/40 uppercase tracking-wider mt-0.5">زمن تصفح الموقع</div>
+                    <div className="font-primary text-xl font-bold text-gold">+٧١٪</div>
+                    <div className="font-primary text-[9px] text-ivory/40 uppercase tracking-wider mt-0.5">زمن تصفح الموقع</div>
                   </div>
                   <div>
-                    <div className="font-serif text-xl font-bold text-gold">+٣٣٪</div>
-                    <div className="font-mono text-[9px] text-ivory/40 uppercase tracking-wider mt-0.5">مبيعات الخدمات الإضافية</div>
+                    <div className="font-primary text-xl font-bold text-gold">+٣٣٪</div>
+                    <div className="font-primary text-[9px] text-ivory/40 uppercase tracking-wider mt-0.5">مبيعات الخدمات الإضافية</div>
                   </div>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
               <div className="pt-4">
                 <button
                   onClick={() => onOpenConsultation("Luxury Launchpad")}
-                  className="flex items-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black px-6 py-3 text-xs uppercase font-mono tracking-widest font-bold transition-all duration-300 shadow-lg shadow-gold/10 hover:shadow-gold/20 cursor-pointer"
+                  className="flex items-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black px-6 py-3 text-xs uppercase font-primary tracking-widest font-bold transition-all duration-300 shadow-lg shadow-gold/10 hover:shadow-gold/20 cursor-pointer"
                 >
                   <span>صمم موقع فندقك الفاخر</span>
                   <ArrowLeft size={12} />
@@ -150,7 +150,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
 
             {/* Right: BEFORE/AFTER COMPARISON SLIDER */}
             <div className="lg:col-span-7 flex flex-col justify-center">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-ivory/40 mb-3 text-center block">
+              <span className="font-primary text-[10px] uppercase tracking-widest text-ivory/40 mb-3 text-center block">
                 ★ اسحب الخط الذهبي للمقارنة بين القالب القديم وإعادة التصميم الاستشارية من لايتك
               </span>
 
@@ -165,12 +165,12 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                 {/* BEFORE (Underneath) */}
                 <div className="absolute inset-0 bg-neutral-900 flex flex-col items-center justify-center p-8 text-center bg-radial from-neutral-800 to-neutral-950">
                   <div className="max-w-md space-y-4 filter opacity-40">
-                    <span className="font-mono text-xs uppercase text-red-400 border border-red-400/20 px-2.5 py-0.5 rounded-full bg-red-400/5">الموقع الفندقي القديم والمكرر (٢٠٢٠)</span>
-                    <h3 className="text-2xl font-sans font-bold text-white tracking-tight">مرحباً بكم في فندق قصر الصحراء</h3>
+                    <span className="font-primary text-xs uppercase text-red-400 border border-red-400/20 px-2.5 py-0.5 rounded-full bg-red-400/5">الموقع الفندقي القديم والمكرر (٢٠٢٠)</span>
+                    <h3 className="text-2xl font-primary font-bold text-white tracking-tight">مرحباً بكم في فندق قصر الصحراء</h3>
                     <div className="h-2 w-full bg-neutral-700 rounded overflow-hidden">
                       <div className="h-full w-1/3 bg-neutral-500" />
                     </div>
-                    <p className="text-xs text-neutral-400 font-sans leading-relaxed">
+                    <p className="text-xs text-neutral-400 font-primary leading-relaxed">
                       نحن نقدم غرفاً مريحة وبأسعار منافسة في وسط المدينة لجميع العائلات والمسافرين والخدمات المتكاملة...
                     </p>
                     <div className="flex gap-2 justify-center">
@@ -179,7 +179,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                     </div>
                   </div>
                   {/* Warning labels of the old site */}
-                  <div className="absolute bottom-6 right-6 flex items-center gap-1.5 font-mono text-[10px] text-red-400 bg-red-400/5 px-2.5 py-1 rounded border border-red-500/10">
+                  <div className="absolute bottom-6 right-6 flex items-center gap-1.5 font-primary text-[10px] text-red-400 bg-red-400/5 px-2.5 py-1 rounded border border-red-500/10">
                     <ShieldAlert size={10} />
                     <span>تحميل بطيء ٤.٨ ثانية (خروج ٤٥٪ من النزلاء)</span>
                   </div>
@@ -193,10 +193,10 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                   <div className="absolute inset-0 bg-cover bg-center flex flex-col justify-between p-8 text-right" style={{ backgroundImage: `linear-gradient(to top, rgba(8,8,8,0.95), rgba(8,8,8,0.4)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80')` }}>
                     <div className="flex justify-between items-center w-full">
                       <div className="flex items-center gap-1.5">
-                        <span className="font-serif text-sm font-bold uppercase tracking-wider text-gold">Al-Sahara Palace</span>
-                        <span className="font-mono text-[8px] text-gold/60 border border-gold/30 px-1.5 py-0.2 rounded">الرياض</span>
+                        <span className="font-primary text-sm font-bold uppercase tracking-wider text-gold">Al-Sahara Palace</span>
+                        <span className="font-primary text-[8px] text-gold/60 border border-gold/30 px-1.5 py-0.2 rounded">الرياض</span>
                       </div>
-                      <div className="flex gap-2 font-mono text-[10px]">
+                      <div className="flex gap-2 font-primary text-[10px]">
                         <span className="text-ivory/40">EN</span>
                         <span className="text-gold">العربية</span>
                       </div>
@@ -209,9 +209,9 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                         <Star size={10} fill="currentColor" />
                         <Star size={10} fill="currentColor" />
                         <Star size={10} fill="currentColor" />
-                        <span className="text-[9px] text-gold font-mono mr-1 uppercase">فخامة ملكية خليجية</span>
+                        <span className="text-[9px] text-gold font-primary mr-1 uppercase">فخامة ملكية خليجية</span>
                       </div>
-                      <h3 className="font-serif text-2xl md:text-3xl text-ivory font-light leading-tight">
+                      <h3 className="font-primary text-2xl md:text-3xl text-ivory font-light leading-tight">
                         واحة السكينة والرفاهية <br />
                         <span className="italic font-normal gold-gradient-text">في قلب العاصمة</span>
                       </h3>
@@ -220,22 +220,22 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                       </p>
                       
                       <div className="flex gap-2.5 pt-1 justify-end">
-                        <button className="rounded bg-gold text-black font-mono text-[9px] uppercase tracking-wider font-bold px-4 py-2 border border-gold cursor-pointer">
+                        <button className="rounded bg-gold text-black font-primary text-[9px] uppercase tracking-wider font-bold px-4 py-2 border border-gold cursor-pointer">
                           احجز مباشرة ووفر ١٥٪
                         </button>
-                        <button className="rounded border border-white/20 bg-white/5 font-mono text-[9px] uppercase tracking-wider font-medium px-4 py-2 text-ivory cursor-pointer">
+                        <button className="rounded border border-white/20 bg-white/5 font-primary text-[9px] uppercase tracking-wider font-medium px-4 py-2 text-ivory cursor-pointer">
                           استعرض الأجنحة الملكية
                         </button>
                       </div>
                     </div>
 
                     <div className="flex justify-between items-center border-t border-white/5 pt-4">
-                      <div className="flex gap-4 font-mono text-[9px] text-ivory/40">
+                      <div className="flex gap-4 font-primary text-[9px] text-ivory/40">
                         <span>الردهة</span>
                         <span>السبا</span>
                         <span>الطعام</span>
                       </div>
-                      <span className="font-mono text-[9px] text-gold uppercase tracking-wider font-semibold">
+                      <span className="font-primary text-[9px] text-gold uppercase tracking-wider font-semibold">
                         ✓ سرعة تحميل ٠.٨ ثانية (سيرفرات الرياض السحابية)
                       </span>
                     </div>
@@ -248,12 +248,12 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                   style={{ left: `${sliderPos}%` }}
                 >
                   <div className="h-10 w-10 rounded-full border border-gold bg-black/90 flex items-center justify-center text-gold shadow-md select-none">
-                    <span className="font-serif text-xs">↔</span>
+                    <span className="font-primary text-xs">↔</span>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-4 flex justify-between font-mono text-[10px] text-ivory/40 px-2">
+              <div className="mt-4 flex justify-between font-primary text-[10px] text-ivory/40 px-2">
                 <span>قبل: قالب ويب قديم بطيء ومعدلات تحويل منخفضة للغاية</span>
                 <span className="text-gold font-semibold">بعد: موقع مخصص خاطف للأنفاس ذو عوائد وحجوزات فائقة</span>
               </div>
@@ -270,13 +270,13 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="flex items-center justify-center gap-2 text-gold">
               <QrCode size={14} className="text-gold" />
-              <span className="font-mono text-xs uppercase tracking-widest font-semibold">أتمتة غرف النزلاء دون تحميل تطبيقات</span>
+              <span className="font-primary text-xs uppercase tracking-widest font-semibold">أتمتة غرف النزلاء دون تحميل تطبيقات</span>
             </div>
-            <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+            <h2 className="mt-4 font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
               بوابة النزلاء الفورية و <br />
               <span className="italic font-normal text-gold">لوحة التوجيه والتشغيل المركزي</span>
             </h2>
-            <p className="mt-4 text-sm md:text-base text-ivory/60 font-light leading-relaxed font-sans">
+            <p className="mt-4 text-sm md:text-base text-ivory/60 font-light leading-relaxed font-primary">
               عندما يمسح النزيل رمز الـ QR داخل الغرفة، تفتح أمامه فوراً وبدون أي عوائق بوابة الخدمات الفندقية لطلب أي خدمة بلمسة واحدة. تفاعل مع المحاكي الحي أدناه: اضغط على أي طلب داخل الموبايل، وشاهد ظهوره اللحظي في لوحة تحكم الاستقبال والخدمة.
             </p>
           </div>
@@ -285,7 +285,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
             
             {/* GUEST PORTAL SMARTPHONE MOCKUP (Left Col) */}
             <div className="lg:col-span-5 flex flex-col items-center">
-              <div className="relative mb-3 flex items-center gap-1.5 rounded-full bg-gold/5 border border-gold/10 px-3 py-1 text-[10px] uppercase font-mono tracking-wider text-gold font-semibold">
+              <div className="relative mb-3 flex items-center gap-1.5 rounded-full bg-gold/5 border border-gold/10 px-3 py-1 text-[10px] uppercase font-primary tracking-wider text-gold font-semibold">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-gold"></span>
@@ -303,7 +303,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                 <div className="h-full w-full rounded-[28px] bg-dark-bg border border-white/5 flex flex-col justify-between overflow-hidden p-3 relative text-xs">
                   
                   {/* Top Bar Status */}
-                  <div className="flex justify-between items-center text-[9px] font-mono text-ivory/40 pb-2 border-b border-white/5 pt-1.5">
+                  <div className="flex justify-between items-center text-[9px] font-primary text-ivory/40 pb-2 border-b border-white/5 pt-1.5">
                     <span>جناح ٤٠٨</span>
                     <span className="text-gold font-semibold">منتجع قصر المها</span>
                     <span>شبكة الفندق ✓</span>
@@ -313,8 +313,8 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                   <div className="flex-grow overflow-y-auto no-scrollbar py-3 space-y-4 text-right">
                     {/* Welcome Header */}
                     <div className="text-center space-y-1">
-                      <span className="font-mono text-[8px] uppercase tracking-wider text-gold font-semibold">مرحباً بضيفنا الكريم</span>
-                      <h4 className="font-serif text-sm font-semibold">أ. فيصل بن عبد العزيز</h4>
+                      <span className="font-primary text-[8px] uppercase tracking-wider text-gold font-semibold">مرحباً بضيفنا الكريم</span>
+                      <h4 className="font-primary text-sm font-semibold">أ. فيصل بن عبد العزيز</h4>
                       <p className="text-[9px] text-ivory/40">نتمنى لك إقامة استثنائية ملؤها الراحة.</p>
                     </div>
 
@@ -325,7 +325,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
-                          className="rounded-lg bg-gold/5 border border-gold/20 p-2 text-center text-[9px] text-gold font-mono flex items-center justify-center gap-1.5"
+                          className="rounded-lg bg-gold/5 border border-gold/20 p-2 text-center text-[9px] text-gold font-primary flex items-center justify-center gap-1.5"
                         >
                           <RefreshCw size={10} className="animate-spin" />
                           جاري إرسال طلبك للاستقبال...
@@ -337,7 +337,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
-                          className="rounded-lg bg-green-500/10 border border-green-500/20 p-2 text-center text-[9px] text-green-400 font-mono flex items-center justify-center gap-1.5"
+                          className="rounded-lg bg-green-500/10 border border-green-500/20 p-2 text-center text-[9px] text-green-400 font-primary flex items-center justify-center gap-1.5"
                         >
                           <Check size={10} className="text-green-400" />
                           تم الإرسال! يظهر الآن بلوحة طاقم الفندق.
@@ -347,7 +347,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
 
                     {/* Quick Request Grid */}
                     <div className="space-y-2">
-                      <span className="block font-mono text-[8px] text-ivory/40 uppercase tracking-widest text-right">اضغط لطلب خدمة فورية لغرفتك</span>
+                      <span className="block font-primary text-[8px] text-ivory/40 uppercase tracking-widest text-right">اضغط لطلب خدمة فورية لغرفتك</span>
                       
                       {[
                         { name: "قهوة عربية وتمر خلاص", desc: "تقدم دافئة مع الهيل والزعفران", category: "خدمات الطعام" },
@@ -363,17 +363,17 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                           className="w-full text-right rounded-lg border border-white/5 bg-white/[0.02] p-2.5 hover:border-gold/30 hover:bg-gold/[0.01] transition-all duration-300 block"
                         >
                           <div className="flex justify-between items-center">
-                            <span className="text-[8px] font-mono text-gold uppercase tracking-wider">{item.category}</span>
-                            <span className="font-serif text-[11px] font-semibold text-ivory/95">{item.name}</span>
+                            <span className="text-[8px] font-primary text-gold uppercase tracking-wider">{item.category}</span>
+                            <span className="font-primary text-[11px] font-semibold text-ivory/95">{item.name}</span>
                           </div>
-                          <span className="block text-[9px] text-ivory/40 mt-1 font-sans">{item.desc}</span>
+                          <span className="block text-[9px] text-ivory/40 mt-1 font-primary">{item.desc}</span>
                         </button>
                       ))}
                     </div>
                   </div>
 
                   {/* App Navigation Footer */}
-                  <div className="border-t border-white/5 pt-2 flex justify-between items-center text-[9px] font-mono text-ivory/40 px-1">
+                  <div className="border-t border-white/5 pt-2 flex justify-between items-center text-[9px] font-primary text-ivory/40 px-1">
                     <span className="text-gold">★ الرئيسية</span>
                     <span>الغرفة</span>
                     <span>الطعام</span>
@@ -382,7 +382,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
 
                 </div>
               </div>
-              <p className="text-xs text-ivory/40 text-center max-w-xs mt-3 leading-relaxed font-sans">
+              <p className="text-xs text-ivory/40 text-center max-w-xs mt-3 leading-relaxed font-primary">
                 حل الـ QR يغني النزيل تماماً عن تعقيد تحميل التطبيقات، بمعدل تبني يتجاوز ٨٥٪.
               </p>
             </div>
@@ -396,12 +396,12 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                   <div className="text-right">
                     <div className="flex items-center gap-2 justify-start sm:justify-start">
                       <div className="h-3 w-3 rounded-full bg-gold animate-slow-pulse" />
-                      <h3 className="font-serif text-lg font-semibold text-ivory">مركز توجيه وتشغيل العمليات المركزي</h3>
+                      <h3 className="font-primary text-lg font-semibold text-ivory">مركز توجيه وتشغيل العمليات المركزي</h3>
                     </div>
-                    <p className="text-[11px] text-ivory/40 font-mono uppercase tracking-wider mt-0.5">لوحة طاقم الاستقبال والمتابعة المباشرة لحظة بلحظة</p>
+                    <p className="text-[11px] text-ivory/40 font-primary uppercase tracking-wider mt-0.5">لوحة طاقم الاستقبال والمتابعة المباشرة لحظة بلحظة</p>
                   </div>
 
-                  <div className="flex gap-2 text-xs font-mono">
+                  <div className="flex gap-2 text-xs font-primary">
                     <span className="bg-gold/10 text-gold border border-gold/20 px-2.5 py-1 rounded-full text-[10px]">
                       الطلبات النشطة: {portalRequests.filter(r => r.status === "pending").length} طلب معلق
                     </span>
@@ -421,29 +421,29 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                 {/* Dashboard Stats */}
                 <div className="grid grid-cols-3 gap-4 border-b border-white/5 pb-6">
                   <div className="bg-white/[0.01] border border-white/5 p-3 rounded-lg text-center">
-                    <span className="block font-mono text-[9px] text-ivory/40 uppercase tracking-widest">متوسط سرعة تلبية الطلب</span>
-                    <span className="block font-serif text-base sm:text-lg font-bold text-gold mt-1">٤.٢ دقيقة</span>
-                    <span className="block text-[8px] text-green-400 font-mono mt-1">✓ أسرع بـ ٦٠٪ من الهاتف</span>
+                    <span className="block font-primary text-[9px] text-ivory/40 uppercase tracking-widest">متوسط سرعة تلبية الطلب</span>
+                    <span className="block font-primary text-base sm:text-lg font-bold text-gold mt-1">٤.٢ دقيقة</span>
+                    <span className="block text-[8px] text-green-400 font-primary mt-1">✓ أسرع بـ ٦٠٪ من الهاتف</span>
                   </div>
                   <div className="bg-white/[0.01] border border-white/5 p-3 rounded-lg text-center">
-                    <span className="block font-mono text-[9px] text-ivory/40 uppercase tracking-widest">مبيعات الخدمات الإضافية</span>
-                    <span className="block font-serif text-base sm:text-lg font-bold text-gold mt-1">١٨,٤٥٠ ريال</span>
-                    <span className="block text-[8px] text-green-400 font-mono mt-1">✓ نمو مبيعات الغرف +٢٢٪</span>
+                    <span className="block font-primary text-[9px] text-ivory/40 uppercase tracking-widest">مبيعات الخدمات الإضافية</span>
+                    <span className="block font-primary text-base sm:text-lg font-bold text-gold mt-1">١٨,٤٥٠ ريال</span>
+                    <span className="block text-[8px] text-green-400 font-primary mt-1">✓ نمو مبيعات الغرف +٢٢٪</span>
                   </div>
                   <div className="bg-white/[0.01] border border-white/5 p-3 rounded-lg text-center">
-                    <span className="block font-mono text-[9px] text-ivory/40 uppercase tracking-widest">كفاءة وتوزيع المهام</span>
-                    <span className="block font-serif text-base sm:text-lg font-bold text-gold mt-1">٩٨.٤٪</span>
-                    <span className="block text-[8px] text-green-400 font-mono mt-1">✓ صفر طلبات ضائعة</span>
+                    <span className="block font-primary text-[9px] text-ivory/40 uppercase tracking-widest">كفاءة وتوزيع المهام</span>
+                    <span className="block font-primary text-base sm:text-lg font-bold text-gold mt-1">٩٨.٤٪</span>
+                    <span className="block text-[8px] text-green-400 font-primary mt-1">✓ صفر طلبات ضائعة</span>
                   </div>
                 </div>
 
                 {/* Live Requests Dispatcher */}
                 <div className="space-y-3 text-right">
-                  <span className="block font-mono text-[9px] text-ivory/40 uppercase tracking-widest">جدول المتابعة الفوري (اتصال عبر الـ WebSockets)</span>
+                  <span className="block font-primary text-[9px] text-ivory/40 uppercase tracking-widest">جدول المتابعة الفوري (اتصال عبر الـ WebSockets)</span>
                   
                   <div className="max-h-[220px] overflow-y-auto space-y-2 pl-1 no-scrollbar">
                     {portalRequests.length === 0 ? (
-                      <div className="py-8 text-center text-ivory/30 text-xs font-mono border border-dashed border-white/5 rounded-xl">
+                      <div className="py-8 text-center text-ivory/30 text-xs font-primary border border-dashed border-white/5 rounded-xl">
                         لا توجد طلبات معلقة في الطابور حالياً. اضغط على أي خدمة داخل هاتف النزيل على اليمين لمحاكاة الطلب الفوري!
                       </div>
                     ) : (
@@ -460,12 +460,12 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                             {req.status === "pending" ? (
                               <button 
                                 onClick={() => handleDispatch(req.id)}
-                                className="rounded bg-gold hover:bg-gold-light text-black font-mono text-[9px] uppercase tracking-wider font-bold px-3 py-1.5 transition-colors cursor-pointer"
+                                className="rounded bg-gold hover:bg-gold-light text-black font-primary text-[9px] uppercase tracking-wider font-bold px-3 py-1.5 transition-colors cursor-pointer"
                               >
                                 توجيه الموظف فوراً
                               </button>
                             ) : (
-                              <span className="font-mono text-[9px] text-green-400 uppercase tracking-wider font-semibold border border-green-500/10 bg-green-500/5 px-2.5 py-1 rounded">
+                              <span className="font-primary text-[9px] text-green-400 uppercase tracking-wider font-semibold border border-green-500/10 bg-green-500/5 px-2.5 py-1 rounded">
                                 ✓ تم التوجيه والحل
                               </span>
                             )}
@@ -473,14 +473,14 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
 
                           <div className="space-y-1">
                             <div className="flex items-center gap-2 justify-end">
-                              <span className="font-mono text-[9px] text-ivory/40">{req.time}</span>
-                              <span className={`font-serif text-xs font-semibold px-2 py-0.5 rounded ${
+                              <span className="font-primary text-[9px] text-ivory/40">{req.time}</span>
+                              <span className={`font-primary text-xs font-semibold px-2 py-0.5 rounded ${
                                 req.status === "pending" ? "bg-gold/15 text-gold border border-gold/20" : "bg-white/5 text-ivory/50"
                               }`}>
                                 {req.room}
                               </span>
                             </div>
-                            <span className="block text-xs font-serif text-ivory/90 font-medium text-right">
+                            <span className="block text-xs font-primary text-ivory/90 font-medium text-right">
                               {req.request}
                             </span>
                           </div>
@@ -494,21 +494,21 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
 
               {/* Business Case Study Callout */}
               <div className="rounded-xl border border-white/5 bg-white/[0.01] p-6 space-y-4 text-right">
-                <h4 className="font-serif text-base font-semibold text-gold flex items-center gap-1.5 justify-start">
+                <h4 className="font-primary text-base font-semibold text-gold flex items-center gap-1.5 justify-start">
                   <LayoutDashboard size={16} />
                   دراسة العائد التشغيلي: منتجع الفلل الملكية بجميرا
                 </h4>
-                <div className="grid gap-4 sm:grid-cols-3 font-serif">
+                <div className="grid gap-4 sm:grid-cols-3 font-primary">
                   <div className="border-l border-white/5 pl-2 text-right">
-                    <span className="block font-mono text-[9px] text-ivory/40 uppercase tracking-widest">العقبة السابقة</span>
+                    <span className="block font-primary text-[9px] text-ivory/40 uppercase tracking-widest">العقبة السابقة</span>
                     <p className="text-xs text-ivory/80 mt-1 font-light leading-relaxed">تلقي الاستقبال لأكثر من ٢٠٠ اتصال يومي مكرر لطلب ثلج أو مناشف يدوية.</p>
                   </div>
                   <div className="border-l border-white/5 pl-2 text-right">
-                    <span className="block font-mono text-[9px] text-ivory/40 uppercase tracking-widest">الحل المطبق</span>
+                    <span className="block font-primary text-[9px] text-ivory/40 uppercase tracking-widest">الحل المطبق</span>
                     <p className="text-xs text-ivory/80 mt-1 font-light leading-relaxed">بوابة النزيل الفورية عبر QR + لوحة توجيه الطلبات الإلكترونية المباشرة.</p>
                   </div>
                   <div className="text-right">
-                    <span className="block font-mono text-[9px] text-ivory/40 uppercase tracking-widest">النتيجة المالية</span>
+                    <span className="block font-primary text-[9px] text-ivory/40 uppercase tracking-widest">النتيجة المالية</span>
                     <p className="text-xs text-gold font-semibold mt-1 leading-relaxed">خفض اتصالات الاستقبال بنسبة ٧٣٪، وتوفير ٤ ساعات عمل يومية لطاقمك.</p>
                   </div>
                 </div>
@@ -529,38 +529,38 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
             
             {/* Left text column: Marketing & SEO */}
             <div className="lg:col-span-5 space-y-6">
-              <div className="flex items-center gap-2 text-gold font-mono text-xs uppercase tracking-widest">
+              <div className="flex items-center gap-2 text-gold font-primary text-xs uppercase tracking-widest">
                 <Instagram size={14} />
                 <span>الاستحواذ وحصد رغبات الحجز الفاخر</span>
               </div>
               
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+              <h2 className="font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
                 توقف عن مطاردة العشوائيين. <br />
                 استقطب <span className="italic font-normal text-gold">الطلب الخليجي عالي الملاءة</span>
               </h2>
 
-              <p className="text-sm md:text-base text-ivory/60 leading-relaxed font-light font-sans">
+              <p className="text-sm md:text-base text-ivory/60 leading-relaxed font-light font-primary">
                 شركات التسويق العامة تلاحق تجميع "الإعجابات" الوهمية. نحن نحدد ونستهدف العائلات الخليجية الكبرى ورجال الأعمال رفيعي المستوى. نصمم محتوى إنستغرام بمظهر سينمائي وندير حملات السيادة المحلية (SEO) لتجعل فندقك أول ما تقع عليه أعين الضيوف في محركات البحث.
               </p>
 
               <div className="space-y-4 text-right">
                 <div className="border-r-2 border-gold/40 pr-4 space-y-1">
-                  <h4 className="font-serif text-sm font-semibold text-ivory">محتوى مرئي بمظهر سينمائي</h4>
-                  <p className="text-xs text-ivory/60 font-sans">فيديوهات قصيرة ورسومات مخصصة تبرز روعة مرافق فندقك، طاولات الطعام الفاخرة، وخصوصية فلل الإقامة.</p>
+                  <h4 className="font-primary text-sm font-semibold text-ivory">محتوى مرئي بمظهر سينمائي</h4>
+                  <p className="text-xs text-ivory/60 font-primary">فيديوهات قصيرة ورسومات مخصصة تبرز روعة مرافق فندقك، طاولات الطعام الفاخرة، وخصوصية فلل الإقامة.</p>
                 </div>
                 <div className="border-r-2 border-gold/40 pr-4 space-y-1">
-                  <h4 className="font-serif text-sm font-semibold text-ivory">السيادة على الكلمات البحثية ذات العائد المرتفع</h4>
-                  <p className="text-xs text-ivory/60 font-sans">تصدر الصدارة المطلقة لعبارات البحث الجاذبة: "منتجع صحراوي فاخر الرياض"، "أجنحة بمسبح خاص دبي"، "فيلات شاطئية مسقط".</p>
+                  <h4 className="font-primary text-sm font-semibold text-ivory">السيادة على الكلمات البحثية ذات العائد المرتفع</h4>
+                  <p className="text-xs text-ivory/60 font-primary">تصدر الصدارة المطلقة لعبارات البحث الجاذبة: "منتجع صحراوي فاخر الرياض"، "أجنحة بمسبح خاص دبي"، "فيلات شاطئية مسقط".</p>
                 </div>
               </div>
 
               {/* Case Study */}
               <div className="rounded-xl border border-white/5 bg-white/[0.01] p-5 text-right">
                 <div className="flex justify-between items-center border-b border-white/5 pb-3">
-                  <span className="font-mono text-[9px] text-green-400 bg-green-500/5 px-2 rounded border border-green-500/10">زيادة حركة المرور +٤٢٠٪</span>
-                  <span className="font-serif text-xs font-semibold text-gold">نتيجة السيادة الرقمية: فندق الملز بالرياض</span>
+                  <span className="font-primary text-[9px] text-green-400 bg-green-500/5 px-2 rounded border border-green-500/10">زيادة حركة المرور +٤٢٠٪</span>
+                  <span className="font-primary text-xs font-semibold text-gold">نتيجة السيادة الرقمية: فندق الملز بالرياض</span>
                 </div>
-                <p className="text-xs text-ivory/60 mt-2 font-serif italic">
+                <p className="text-xs text-ivory/60 mt-2 font-primary italic">
                   "تضاعفت طلبات الحجز المباشر للشركات والمسؤولين لدينا بمعدل ٤ مرات في غضون ٩٠ يوماً فقط. نحن نتصدر الآن كافة الكلمات الاستراتيجية للضيافة الفاخرة بالعاصمة."
                 </p>
               </div>
@@ -568,7 +568,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
               <div className="pt-2">
                 <button
                   onClick={() => onOpenConsultation("Ecosystem Growth")}
-                  className="rounded-lg border border-gold/20 hover:bg-gold/10 text-gold px-6 py-3 text-xs uppercase font-mono tracking-widest transition-all duration-300 cursor-pointer"
+                  className="rounded-lg border border-gold/20 hover:bg-gold/10 text-gold px-6 py-3 text-xs uppercase font-primary tracking-widest transition-all duration-300 cursor-pointer"
                 >
                   استقطب نزلاء فندقك النخبة
                 </button>
@@ -581,8 +581,8 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
               {/* GOOGLE SEO SIMULATOR */}
               <div className="rounded-xl border border-white/5 bg-[#0A0A0A] p-5 space-y-4 shadow-xl">
                 <div className="flex items-center gap-2 border-b border-white/5 pb-3 justify-between">
-                  <span className="text-[9px] font-mono text-green-400 font-semibold bg-green-500/5 px-2 py-0.5 rounded">تم تمكين الصدارة رقم #01 بجوجل</span>
-                  <div className="flex items-center gap-1.5 font-mono text-[10px] text-ivory/40">
+                  <span className="text-[9px] font-primary text-green-400 font-semibold bg-green-500/5 px-2 py-0.5 rounded">تم تمكين الصدارة رقم #01 بجوجل</span>
+                  <div className="flex items-center gap-1.5 font-primary text-[10px] text-ivory/40">
                     <Search size={12} className="text-gold" />
                     <span>محاكي قوة ظهور وتصدر البحث (SEO)</span>
                   </div>
@@ -590,7 +590,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
 
                 {/* Mock Search Input */}
                 <div className="flex gap-2">
-                  <button className="rounded bg-gold text-black font-mono text-[9px] uppercase px-4 py-1.5 font-bold cursor-pointer">ابحث في جوجل</button>
+                  <button className="rounded bg-gold text-black font-primary text-[9px] uppercase px-4 py-1.5 font-bold cursor-pointer">ابحث في جوجل</button>
                   <div className="relative flex-grow">
                     <input
                       type="text"
@@ -604,16 +604,16 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
 
                 {/* Search Result Snippet */}
                 <div className="rounded-lg border border-gold/20 bg-gold/[0.01] p-4 space-y-1 text-xs text-right">
-                  <div className="flex items-center gap-1.5 text-[10px] text-ivory/40 font-mono justify-end">
+                  <div className="flex items-center gap-1.5 text-[10px] text-ivory/40 font-primary justify-end">
                     <span className="text-gold">▼ موقع حجز فندقي آمن ومباشر</span>
                     <span>https://symphonysands.com</span>
                   </div>
                   
-                  <h4 className="font-serif text-sm font-semibold text-blue-400 hover:underline cursor-pointer">
+                  <h4 className="font-primary text-sm font-semibold text-blue-400 hover:underline cursor-pointer">
                     منتجع رمال السيمفونية مسقط — أجنحة فخمة مطلة على البحر وفيلات شاطئية خاصة
                   </h4>
 
-                  <div className="flex items-center gap-1.5 text-gold text-[10px] font-mono py-0.5 justify-end">
+                  <div className="flex items-center gap-1.5 text-gold text-[10px] font-primary py-0.5 justify-end">
                     <span>تقييم فندق ممتاز: ٥.٠ — ٤٨٢ تقييم موثق — متوفر حجز مباشر فوري غرف وأجنحة</span>
                     <div className="flex items-center">
                       <Star size={10} fill="currentColor" />
@@ -628,7 +628,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                     احجز إقامتك الفاخرة مباشرة عبر بوابة الفندق الآمنة لتستفيد فوراً من حزمة ترحيبية تشمل دخول مجاني للردهة التنفيذية، توصيل خاص مجاني من المطار وسيارات فارهة، وخصم <strong>١٥٪ حصري على أسعار الغرف اليومية</strong>. احجز الآن.
                   </p>
 
-                  <div className="pt-2 flex gap-4 text-[10px] font-mono text-gold justify-end">
+                  <div className="pt-2 flex gap-4 text-[10px] font-primary text-gold justify-end">
                     <span className="hover:underline cursor-pointer">★ خصم ١٥٪ للحجز المباشر</span>
                     <span className="hover:underline cursor-pointer">استعرض الفيلات المطلة على الجرف</span>
                     <span className="hover:underline cursor-pointer">باقات السبا والراحة</span>
@@ -639,15 +639,15 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
               {/* INSTAGRAM GRID */}
               <div className="rounded-xl border border-white/5 bg-[#0A0A0A] p-5 space-y-4">
                 <div className="flex justify-between items-center border-b border-white/5 pb-3">
-                  <span className="font-mono text-[9px] text-gold bg-gold/5 border border-gold/15 px-2 py-0.5 rounded">
+                  <span className="font-primary text-[9px] text-gold bg-gold/5 border border-gold/15 px-2 py-0.5 rounded">
                     +١٣,٤٠٠ متابع حقيقي مستهدف بالخليج
                   </span>
                   <div className="flex items-center gap-2">
                     <div className="text-right">
-                      <span className="block text-xs font-serif font-semibold text-ivory leading-tight">symphonysands.resort</span>
-                      <span className="block text-[8px] font-mono text-ivory/40">مسقط، عمان</span>
+                      <span className="block text-xs font-primary font-semibold text-ivory leading-tight">symphonysands.resort</span>
+                      <span className="block text-[8px] font-primary text-ivory/40">مسقط، عمان</span>
                     </div>
-                    <div className="h-6 w-6 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center font-serif text-[10px] text-gold font-bold">L</div>
+                    <div className="h-6 w-6 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center font-primary text-[10px] text-gold font-bold">L</div>
                   </div>
                 </div>
 
@@ -666,7 +666,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       {/* Hover Overlay */}
-                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 text-[10px] font-mono">
+                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 text-[10px] font-primary">
                         <span className="text-gold">❤ {img.likes}</span>
                         <span>💬 {img.comments}</span>
                       </div>
@@ -694,10 +694,10 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
               {/* MOCK GOOGLE MAPS UI CARD */}
               <div className="rounded-xl border border-white/5 bg-[#0A0A0A] p-5 space-y-4 shadow-xl">
                 <div className="flex justify-between items-center border-b border-white/5 pb-3">
-                  <span className="text-[9px] font-mono text-green-400 bg-green-500/5 border border-green-500/10 px-2 py-0.5 rounded">
+                  <span className="text-[9px] font-primary text-green-400 bg-green-500/5 border border-green-500/10 px-2 py-0.5 rounded">
                     +١٨٠٪ طلب خطوط واتجاهات الملاحة
                   </span>
-                  <div className="flex items-center gap-1.5 font-mono text-[10px] text-ivory/40">
+                  <div className="flex items-center gap-1.5 font-primary text-[10px] text-ivory/40">
                     <MapPin size={12} className="text-gold animate-drift" />
                     <span>منصة تحسين وتوطين خرائط جوجل وجوجل مابس</span>
                   </div>
@@ -707,14 +707,14 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                   {/* Map Profile Mock */}
                   <div className="sm:col-span-5 rounded-lg border border-white/10 bg-black p-4 space-y-3 text-right">
                     <div className="space-y-0.5">
-                      <h4 className="font-serif text-sm font-semibold text-ivory">منتجع سيمفونية مسقط</h4>
-                      <p className="text-[10px] text-gold font-mono uppercase tracking-wider flex items-center gap-1 justify-end">
+                      <h4 className="font-primary text-sm font-semibold text-ivory">منتجع سيمفونية مسقط</h4>
+                      <p className="text-[10px] text-gold font-primary uppercase tracking-wider flex items-center gap-1 justify-end">
                         ٥.٠ (٤٨٢ تقييم حقيقي) <span>★★★★★</span>
                       </p>
                       <p className="text-[10px] text-ivory/40">منتجع فاخر خمس نجوم • مسقط</p>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-1 text-center font-mono text-[9px] text-gold">
+                    <div className="grid grid-cols-3 gap-1 text-center font-primary text-[9px] text-gold">
                       <div className="border border-gold/20 rounded py-1 bg-gold/5 cursor-pointer hover:bg-gold/10">
                         <span className="block">✉</span>
                         <span>حجز</span>
@@ -751,9 +751,9 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
                         <div className="rounded-full bg-gold/20 border border-gold p-1 animate-slow-pulse">
                           <MapPin size={18} className="text-gold" />
                         </div>
-                        <span className="mt-1 font-serif text-[10px] text-gold font-bold bg-black/80 px-2 py-0.5 rounded border border-gold/20">منتجع السيمفونية</span>
+                        <span className="mt-1 font-primary text-[10px] text-gold font-bold bg-black/80 px-2 py-0.5 rounded border border-gold/20">منتجع السيمفونية</span>
                       </div>
-                      <div className="absolute bottom-2 right-2 text-[8px] font-mono text-ivory/30">لوحة الملاحة الموجهة</div>
+                      <div className="absolute bottom-2 right-2 text-[8px] font-primary text-ivory/30">لوحة الملاحة الموجهة</div>
                     </div>
                   </div>
                 </div>
@@ -762,8 +762,8 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
               {/* REVENUE INTEL DISPLAY */}
               <div className="rounded-xl border border-white/5 bg-[#0A0A0A] p-5 space-y-4">
                 <div className="flex justify-between items-center border-b border-white/5 pb-3">
-                  <span className="text-[9px] font-mono text-gold uppercase tracking-wider font-semibold">تأثير مالي حقيقي ومباشر</span>
-                  <div className="flex items-center gap-1.5 font-mono text-[10px] text-ivory/40">
+                  <span className="text-[9px] font-primary text-gold uppercase tracking-wider font-semibold">تأثير مالي حقيقي ومباشر</span>
+                  <div className="flex items-center gap-1.5 font-primary text-[10px] text-ivory/40">
                     <TrendingUp size={12} className="text-gold" />
                     <span>لوحة مراقبة وتحليلات الإيرادات والعائد لكل غرفة (RevPAR)</span>
                   </div>
@@ -771,24 +771,24 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
 
                 <div className="grid gap-4 grid-cols-2 md:grid-cols-4 text-center">
                   <div className="bg-white/[0.01] border border-white/5 p-3 rounded-lg">
-                    <span className="block text-[8px] text-ivory/40 font-mono">معدل الإشغال السنوي</span>
-                    <span className="block text-sm sm:text-base font-serif font-bold text-gold mt-1">٧٤.٢٪</span>
-                    <span className="block text-[8px] font-mono text-green-400 mt-0.5">+١٢٪ نمو سنوي</span>
+                    <span className="block text-[8px] text-ivory/40 font-primary">معدل الإشغال السنوي</span>
+                    <span className="block text-sm sm:text-base font-primary font-bold text-gold mt-1">٧٤.٢٪</span>
+                    <span className="block text-[8px] font-primary text-green-400 mt-0.5">+١٢٪ نمو سنوي</span>
                   </div>
                   <div className="bg-white/[0.01] border border-white/5 p-3 rounded-lg">
-                    <span className="block text-[8px] text-ivory/40 font-mono">العائد للغرفة المتاحة RevPAR</span>
-                    <span className="block text-sm sm:text-base font-serif font-bold text-gold mt-1">٩٤٥ ريال</span>
-                    <span className="block text-[8px] font-mono text-green-400 mt-0.5">+٢٤٪ نمو عوائد</span>
+                    <span className="block text-[8px] text-ivory/40 font-primary">العائد للغرفة المتاحة RevPAR</span>
+                    <span className="block text-sm sm:text-base font-primary font-bold text-gold mt-1">٩٤٥ ريال</span>
+                    <span className="block text-[8px] font-primary text-green-400 mt-0.5">+٢٤٪ نمو عوائد</span>
                   </div>
                   <div className="bg-white/[0.01] border border-white/5 p-3 rounded-lg">
-                    <span className="block text-[8px] text-ivory/40 font-mono">عمولات المنصات التي تم توفيرها</span>
-                    <span className="block text-sm sm:text-base font-serif font-bold text-gold mt-1">٨٢,٤٠٠ ريال</span>
-                    <span className="block text-[8px] font-mono text-green-400 mt-0.5">توفير خالص هذا الشهر</span>
+                    <span className="block text-[8px] text-ivory/40 font-primary">عمولات المنصات التي تم توفيرها</span>
+                    <span className="block text-sm sm:text-base font-primary font-bold text-gold mt-1">٨٢,٤٠٠ ريال</span>
+                    <span className="block text-[8px] font-primary text-green-400 mt-0.5">توفير خالص هذا الشهر</span>
                   </div>
                   <div className="bg-white/[0.01] border border-white/5 p-3 rounded-lg">
-                    <span className="block text-[8px] text-ivory/40 font-mono">نسبة الحجز المباشر الموطن</span>
-                    <span className="block text-sm sm:text-base font-serif font-bold text-gold mt-1">٦٨.٥٪</span>
-                    <span className="block text-[8px] font-mono text-green-400 mt-0.5">سيادة كاملة</span>
+                    <span className="block text-[8px] text-ivory/40 font-primary">نسبة الحجز المباشر الموطن</span>
+                    <span className="block text-sm sm:text-base font-primary font-bold text-gold mt-1">٦٨.٥٪</span>
+                    <span className="block text-[8px] font-primary text-green-400 mt-0.5">سيادة كاملة</span>
                   </div>
                 </div>
               </div>
@@ -797,38 +797,38 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
 
             {/* Right text column: Maps & Analytics */}
             <div className="lg:col-span-5 space-y-6">
-              <div className="flex items-center gap-2 text-gold font-mono text-xs uppercase tracking-widest">
+              <div className="flex items-center gap-2 text-gold font-primary text-xs uppercase tracking-widest">
                 <MapPinned size={14} />
                 <span>السيادة الجغرافية وحوكمة العوائد الفندقية</span>
               </div>
               
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+              <h2 className="font-primary text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
                 تصدر الخيار الجغرافي. <br />
                 <span className="italic font-normal text-gold">وحكّم أرقام أرباحك الصافية</span>
               </h2>
 
-              <p className="text-sm md:text-base text-ivory/60 leading-relaxed font-light font-sans">
+              <p className="text-sm md:text-base text-ivory/60 leading-relaxed font-light font-primary">
                 خرائط جوجل وجوجل مابس هي بوابات الحجز السريعة الأقوى للضيوف القريبين أو المتجهين لمطار فندقك. نحن لا نقوم فقط بتحديث خرائطك؛ نحن نقوم بتهيئتها رقمياً لتتصدر المراكز الثلاثة الأولى في عمليات البحث الجغرافي الفندقية الإقليمية مع ربط مباشر يحجز الليلة فورياً وبدون رسوم وسيطة.
               </p>
 
               <div className="space-y-4 text-right">
                 <div className="border-r-2 border-gold/40 pr-4 space-y-1">
-                  <h4 className="font-serif text-sm font-semibold text-ivory">أتمتة وحوكمة خرائط جوجل مابس</h4>
-                  <p className="text-xs text-ivory/60 font-sans">توطين التقييمات الإيجابية للنزلاء وربط الفندق بنظام حجز مباشر يستوعب الضيوف لحظياً عند البحث المحلي.</p>
+                  <h4 className="font-primary text-sm font-semibold text-ivory">أتمتة وحوكمة خرائط جوجل مابس</h4>
+                  <p className="text-xs text-ivory/60 font-primary">توطين التقييمات الإيجابية للنزلاء وربط الفندق بنظام حجز مباشر يستوعب الضيوف لحظياً عند البحث المحلي.</p>
                 </div>
                 <div className="border-r-2 border-gold/40 pr-4 space-y-1">
-                  <h4 className="font-serif text-sm font-semibold text-ivory">لوحات تحليل الـ RevPAR الحقيقي</h4>
-                  <p className="text-xs text-ivory/60 font-sans">قس لحظياً نجاح عمليات التسويق، ونمو الإشغال، والعمولات المستردة من Booking.com لتعرضها على مجلس إدارتك كأرقام مالية معتمدة.</p>
+                  <h4 className="font-primary text-sm font-semibold text-ivory">لوحات تحليل الـ RevPAR الحقيقي</h4>
+                  <p className="text-xs text-ivory/60 font-primary">قس لحظياً نجاح عمليات التسويق، ونمو الإشغال، والعمولات المستردة من Booking.com لتعرضها على مجلس إدارتك كأرقام مالية معتمدة.</p>
                 </div>
               </div>
 
               {/* Verified Result */}
               <div className="rounded-xl border border-white/5 bg-white/[0.01] p-5 text-right">
                 <div className="flex justify-between items-center border-b border-white/5 pb-3">
-                  <span className="font-mono text-[9px] text-green-400 bg-green-500/5 px-2 rounded border border-green-500/10">توفير مالي هائل</span>
-                  <span className="font-serif text-xs font-semibold text-gold">توفير العمولات: منتجع الواحة الفاخرة</span>
+                  <span className="font-primary text-[9px] text-green-400 bg-green-500/5 px-2 rounded border border-green-500/10">توفير مالي هائل</span>
+                  <span className="font-primary text-xs font-semibold text-gold">توفير العمولات: منتجع الواحة الفاخرة</span>
                 </div>
-                <p className="text-xs text-ivory/60 mt-2 font-serif italic">
+                <p className="text-xs text-ivory/60 mt-2 font-primary italic">
                   "استعدنا السيطرة الكاملة على قنوات الحجز الجغرافية. وفرنا أكثر من ٣٨,٠٠٠ ريال سعودي عمولات للمنصات الأجنبية في أول شهرين تشغيل بفضل خرائط جوجل مابس المحدثة."
                 </p>
               </div>
@@ -836,7 +836,7 @@ export default function Services({ onOpenConsultation, portalRequests, setPortal
               <div className="pt-2">
                 <button
                   onClick={() => onOpenConsultation("Enterprise Advisory")}
-                  className="rounded-lg border border-gold/20 hover:bg-gold/10 text-gold px-6 py-3 text-xs uppercase font-mono tracking-widest transition-all duration-300 cursor-pointer"
+                  className="rounded-lg border border-gold/20 hover:bg-gold/10 text-gold px-6 py-3 text-xs uppercase font-primary tracking-widest transition-all duration-300 cursor-pointer"
                 >
                   احجز مراجعة لأرقام فندقك
                 </button>
