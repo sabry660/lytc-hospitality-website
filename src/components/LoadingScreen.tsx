@@ -46,7 +46,7 @@ export default function LoadingScreen() {
             {/* Logo Image */}
             <div className="relative mb-8 h-20 w-20 flex items-center justify-center">
               <motion.img
-                src="/assets/logo.jpg"
+                src="/logo.jpg"
                 alt="LYTC Logo"
                 className="h-20 w-20 object-contain"
                 initial={{ opacity: 0, scale: 0.8 }}

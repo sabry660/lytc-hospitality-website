@@ -21,7 +21,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
           <div className="md:col-span-2 space-y-6">
             <div className="flex items-center gap-3 justify-start flex-row-reverse">
               <img
-                src="/assets/logo.jpg"
+                src="/logo.jpg"
                 alt="LYTC Logo"
                 className="h-12 w-12 object-contain"
               />

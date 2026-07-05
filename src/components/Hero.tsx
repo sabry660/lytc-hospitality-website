@@ -87,7 +87,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
       <header className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-6 py-6 max-w-7xl mx-auto md:px-12">
         <div className="flex items-center gap-3">
           <img
-            src="/assets/logo.jpg"
+            src="/logo.jpg"
             alt="LYTC Logo"
             className="h-11 w-11 object-contain"
           />
