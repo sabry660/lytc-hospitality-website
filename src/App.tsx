@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MessageSquare, Calendar, Sparkles, PhoneCall, ShieldAlert, FileText, ArrowLeft } from "lucide-react";
 import { motion, AnimatePresence, useScroll, useSpring } from "motion/react";
+import { Analytics } from '@vercel/analytics/react';
 
 // Components
 import LoadingScreen from "./components/LoadingScreen";
@@ -240,6 +241,7 @@ export default function App() {
 
         </div>
       </SmoothScroll>
+      <Analytics />
     </>
   );
 }
