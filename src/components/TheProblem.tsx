@@ -73,10 +73,10 @@ export default function TheProblem() {
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-white/5">
                   <div>
-                    <h3 className="font-primary text-base sm:text-lg font-medium text-red-400">قمع تسرب حجوزات وعوائد الفندق</h3>
-                    <p className="text-[11px] text-ivory/40 font-primary uppercase tracking-wider mt-0.5">أين تذهب أرباح غرفتك المباشرة؟</p>
+                    <h3 className="font-primary text-lg sm:text-xl font-medium text-red-400">قمع تسرب حجوزات وعوائد الفندق</h3>
+                    <p className="text-xs text-ivory/40 font-primary uppercase tracking-wider mt-0.5">أين تذهب أرباح غرفتك المباشرة؟</p>
                   </div>
-                  <div className="font-primary text-[10px] text-red-400/80 bg-red-400/5 px-2.5 py-1 rounded-full border border-red-400/10">
+                  <div className="font-primary text-xs sm:text-sm text-red-400/80 bg-red-400/5 px-2.5 py-1 rounded-full border border-red-400/10">
                     عينة المحاكاة السنوية: {startGuests} زائر مهتم
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function TheProblem() {
                   <div className="flex justify-center my-1">
                     <div className="flex flex-col items-center">
                       <ArrowDown size={14} className="text-red-500/50 animate-bounce" />
-                      <span className="text-[9px] font-primary text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
+                      <span className="text-xs sm:text-sm font-primary text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
                         خسارة -{(visibilityLeak * 100)}% لعدم الظهور في خرائط وجوجل مابس
                       </span>
                     </div>
@@ -118,7 +118,7 @@ export default function TheProblem() {
                   <div className="flex justify-center my-1">
                     <div className="flex flex-col items-center">
                       <ArrowDown size={14} className="text-red-500/50 animate-bounce" />
-                      <span className="text-[9px] font-primary text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
+                      <span className="text-xs sm:text-sm font-primary text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
                         خروج -{(trustLeak * 100)}% بسبب بطء التصفح وواجهات الموبايل القديمة
                       </span>
                     </div>
@@ -139,7 +139,7 @@ export default function TheProblem() {
                   <div className="flex justify-center my-1">
                     <div className="flex flex-col items-center">
                       <ArrowDown size={14} className="text-red-500/50 animate-bounce" />
-                      <span className="text-[9px] font-primary text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
+                      <span className="text-xs sm:text-sm font-primary text-red-400/80 bg-red-400/5 px-2.5 py-0.5 rounded border border-red-500/10">
                         فقدان -{(bookingLeak * 100)}% لمنصات الحجز الخارجية لعدم وجود دفع محلي مرن
                       </span>
                     </div>
@@ -162,12 +162,12 @@ export default function TheProblem() {
               {/* Bottom Financial Analysis */}
               <div className="mt-6 pt-4 border-t border-white/5 grid grid-cols-2 gap-4">
                 <div>
-                  <span className="text-[9px] font-primary text-ivory/40 uppercase block">عمولات مهدورة لـ Booking:</span>
-                  <span className="font-primary text-xs sm:text-sm text-red-400 font-semibold">{otaBookers} نزلاء عبر المنصات = {formatCurrency(otaCommissionLost)}</span>
+                  <span className="text-xs font-primary text-ivory/40 uppercase block">عمولات مهدورة لـ Booking:</span>
+                  <span className="font-primary text-sm sm:text-base text-red-400 font-semibold">{otaBookers} نزلاء عبر المنصات = {formatCurrency(otaCommissionLost)}</span>
                 </div>
                 <div>
-                  <span className="text-[9px] font-primary text-ivory/40 uppercase block">إجمالي تسرب الإيرادات المحتمل:</span>
-                  <span className="font-primary text-xs sm:text-sm text-red-400 font-bold">{formatCurrency(totalLeakageMoney)}</span>
+                  <span className="text-xs font-primary text-ivory/40 uppercase block">إجمالي تسرب الإيرادات المحتمل:</span>
+                  <span className="font-primary text-sm sm:text-base text-red-400 font-bold">{formatCurrency(totalLeakageMoney)}</span>
                 </div>
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function TheProblem() {
                             <h4 className={`text-xs sm:text-sm uppercase tracking-wider font-semibold ${isActive ? "text-gold" : "text-ivory"}`}>
                               {problem.title}
                             </h4>
-                            <span className="font-primary text-[9px] text-red-400 font-medium px-2 py-0.5 rounded bg-red-400/5 border border-red-400/10 w-fit">
+                            <span className="font-primary text-xs sm:text-sm text-red-400 font-semibold px-2 py-1 rounded bg-red-400/5 border border-red-400/10 w-fit">
                               {problem.impact}
                             </span>
                           </div>
