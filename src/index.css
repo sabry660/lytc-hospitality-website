@@ -63,6 +63,27 @@ html {
   background-color: #080808;
   color: #F8F6F2;
   font-family: var(--font-primary);
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  letter-spacing: 0.01em;
+}
+
+body, button, input, textarea, select {
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.015em;
+}
+
+p, span, a, li, label {
+  letter-spacing: 0.01em;
 }
 
 ::selection {

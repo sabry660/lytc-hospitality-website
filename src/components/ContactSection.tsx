@@ -18,11 +18,8 @@ export default function ContactSection() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [lastWhatsappUrl, setLastWhatsappUrl] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    const messageText = `السلام عليكم ورحمة الله وبركاته،
+  const prepareWhatsappMessage = () => {
+    return `السلام عليكم ورحمة الله وبركاته،
 أود طلب دراسة جدوى فندقية واستشارة من لايتك (LYTC). تفاصيل الطلب:
 
 • اسم الفندق: ${formData.hotelName}
@@ -33,18 +30,25 @@ export default function ContactSection() {
 • عدد الغرف والأجنحة: ${formData.roomsCount}
 • موقع الفندق الحالي: ${formData.currentWebsite || "لا يوجد"}
 • الرسالة: ${formData.message || "لا توجد تفاصيل إضافية"}`;
+  };
 
-    const whatsappUrl = `https://wa.me/201070853978?text=${encodeURIComponent(messageText)}`;
+  const getWhatsappUrl = () => {
+    return `https://wa.me/201070853978?text=${encodeURIComponent(prepareWhatsappMessage())}`;
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    const whatsappUrl = getWhatsappUrl();
     setLastWhatsappUrl(whatsappUrl);
     
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
       
-      // Attempt to open the WhatsApp URL in a new window/tab
       window.open(whatsappUrl, "_blank");
       
-      // Reset form fields
       setFormData({
         hotelName: "",
         managerName: "",
@@ -262,21 +266,12 @@ export default function ContactSection() {
                 </div>
 
                 {/* CTAs */}
-                <div className="pt-3 flex flex-col sm:flex-row gap-4">
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 rounded-lg bg-gold hover:bg-gold-light text-black py-3.5 text-xs font-primary font-bold tracking-wider transition-all duration-300 shadow-xl shadow-gold/10 cursor-pointer disabled:opacity-50"
-                  >
-                    <span>{isSubmitting ? "جاري الإرسال وتأمين الطلب..." : "احجز استشارة مجانية الآن"}</span>
-                    <Calendar size={13} />
-                  </button>
-
+                <div className="pt-3">
                   <a
-                    href="https://wa.me/201070853978"
+                    href={getWhatsappUrl()}
                     target="_blank"
                     rel="noreferrer"
-                    className="w-full sm:w-auto flex items-center justify-center gap-2.5 rounded-lg border border-green-500/30 bg-green-500/10 hover:bg-green-500/20 text-green-400 font-bold px-6 py-3.5 text-xs font-primary tracking-wider transition-all duration-300"
+                    className="w-full inline-flex items-center justify-center gap-2.5 rounded-lg border border-green-500/30 bg-green-500/10 hover:bg-green-500/20 text-green-400 font-bold px-6 py-3.5 text-xs font-primary tracking-wider transition-all duration-300"
                   >
                     <MessageSquare size={14} />
                     <span>تحدث معنا عبر واتساب</span>

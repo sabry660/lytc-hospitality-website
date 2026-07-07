@@ -129,23 +129,23 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
             <span className="h-1 w-1 bg-white/25 rounded-full" />
           </div>
 
-          <div className="flex justify-between items-center flex-row-reverse border-b border-white/5 pb-2 pt-1 text-[9px] text-ivory/50">
-            <span className="font-primary text-[10px] text-gold font-bold">بوابة النزيل الذكية</span>
+          <div className="flex justify-between items-center flex-row-reverse border-b border-white/5 pb-2 pt-1 text-xs text-ivory/50">
+            <span className="font-primary text-sm text-gold font-bold">بوابة النزيل الذكية</span>
             <span>Villa 102</span>
           </div>
 
           <div className="my-auto space-y-2.5 text-right">
-            <div className="flex items-center gap-1.5 justify-end text-[10px] text-white font-primary">
+            <div className="flex items-center gap-1.5 justify-end text-sm text-white font-primary">
               <span>أهلاً بالضيف الكريم</span>
               <Heart size={8} className="text-gold fill-current animate-pulse" />
             </div>
             
-            <div className="border border-gold/15 bg-gold/5 rounded-xl p-2 text-center text-[9px]">
+            <div className="border border-gold/15 bg-gold/5 rounded-xl p-2 text-center text-sm">
               <span className="text-gold font-bold">طلب فطور فرنسي فاخر</span>
-              <p className="text-[7px] text-ivory/40 mt-0.5">تم تلبية الطلب • ٣ دقائق</p>
+              <p className="text-xs text-ivory/40 mt-0.5">تم تلبية الطلب • ٣ دقائق</p>
             </div>
 
-            <div className="border border-white/5 bg-white/[0.02] rounded-xl p-2 text-center text-[8px] space-y-1">
+            <div className="border border-white/5 bg-white/[0.02] rounded-xl p-2 text-center text-xs space-y-1">
               <div className="flex justify-between flex-row-reverse text-ivory/40">
                 <span>توصيل حقائب الغرفة</span>
                 <span className="text-gold font-bold">نشط</span>
@@ -157,7 +157,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
             </div>
           </div>
 
-          <div className="flex items-center justify-between flex-row-reverse pt-2 border-t border-white/5 text-[8px] text-ivory/40">
+          <div className="flex items-center justify-between flex-row-reverse pt-2 border-t border-white/5 text-[10px] text-ivory/40">
             <span>دعم Apple Pay و Mada</span>
             <span className="text-gold font-primary font-bold">ORYX</span>
           </div>
@@ -178,26 +178,26 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
           <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-transparent via-gold to-transparent" />
           
           <div className="flex justify-between items-center flex-row-reverse pb-2 border-b border-white/5">
-            <span className="font-primary text-[9px] text-gold uppercase tracking-wider font-bold">الربط المركزي المباشر PMS</span>
+            <span className="font-primary text-xs text-gold uppercase tracking-wider font-bold">الربط المركزي المباشر PMS</span>
             <span className="h-2 w-2 rounded-full bg-green-500 animate-ping" />
           </div>
 
           <div className="space-y-2 mt-2 text-right">
-            <div className="flex justify-between flex-row-reverse text-[9px] text-ivory/50">
+            <div className="flex justify-between flex-row-reverse text-xs text-ivory/50">
               <span>الحجوزات المباشرة (اليوم):</span>
               <span className="text-green-400 font-bold font-primary">+٣٤,٥٠٠ ر.س</span>
             </div>
-            <div className="flex justify-between flex-row-reverse text-[9px] text-ivory/50">
+            <div className="flex justify-between flex-row-reverse text-xs text-ivory/50">
               <span>عمولات Booking الموفرة:</span>
               <span className="text-green-400 font-bold font-primary">٧,٦٢٠ ر.س</span>
             </div>
-            <div className="flex justify-between flex-row-reverse text-[9px] text-ivory/50">
+            <div className="flex justify-between flex-row-reverse text-xs text-ivory/50">
               <span>نسبة إشغال الغرف المباشر:</span>
               <span className="text-white font-primary font-bold">٨٤.٢٪</span>
             </div>
           </div>
 
-          <div className="border-t border-white/5 pt-2 flex justify-between items-center flex-row-reverse text-[8px] text-ivory/30">
+          <div className="border-t border-white/5 pt-2 flex justify-between items-center flex-row-reverse text-[10px] text-ivory/30">
             <span>دعم فني فوري مستمر</span>
             <span>الرياض • دبي • المنامة</span>
           </div>
@@ -244,16 +244,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
           transition={{ duration: 0.8, delay: 1.3 }}
           className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center w-full max-w-3xl z-30"
         >
-          <MagneticButton
-            onClick={onOpenConsultation}
-            className="w-full sm:w-auto"
-          >
-            <div className="w-full sm:w-auto flex items-center justify-center gap-2.5 rounded-lg bg-gold hover:bg-gold-light text-black px-8 py-4 text-xs font-primary tracking-widest font-bold transition-all duration-300 shadow-xl shadow-gold/20 cursor-pointer">
-              <span>احجز جلسة استراتيجية مغلقة</span>
-              <Calendar size={14} />
-            </div>
-          </MagneticButton>
-
+        
           <a
             href="https://wa.me/201070853978"
             target="_blank"
@@ -261,7 +252,7 @@ export default function Hero({ onOpenConsultation, onScrollToSuccess }: HeroProp
             className="w-full sm:w-auto flex items-center justify-center gap-2.5 rounded-lg border border-green-500/35 bg-green-500/10 hover:bg-green-500/20 text-green-400 hover:text-green-300 px-8 py-4 text-xs font-primary tracking-widest font-bold transition-all duration-300 animate-pulse"
           >
             <MessageSquare size={14} className="text-green-400" />
-            <span>تحدث مع الاستشاري عبر واتساب</span>
+            <span>تواصل معنا عبر واتساب</span>
           </a>
 
           <MagneticButton

@@ -66,6 +66,10 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
     return false;
   };
 
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/201070853978", "_blank", "noopener,noreferrer");
+  };
+
   return (
     <section className="bg-[#030303] py-36 text-ivory border-t border-white/5 font-primary relative overflow-hidden" id="pricing">
       {/* Exquisite Arabesque and Radial Glow Overlays */}
@@ -120,12 +124,11 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             whileHover={{ y: -8, borderColor: "rgba(212, 175, 55, 0.3)" }}
-            className="relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.03] to-white/[0.01] backdrop-blur-md p-9 flex flex-col justify-between overflow-hidden transition-all duration-500 text-right group shadow-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.6)]"
+            className="relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.03] to-white/[0.01] backdrop-blur-md p-6 sm:p-8 lg:p-9 flex flex-col justify-between overflow-hidden transition-all duration-500 text-right group shadow-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.6)]"
           >
             <div className="space-y-8">
               <div className="flex justify-between items-start flex-row-reverse">
                 <div>
-                  <span className="text-[10px] font-primary text-gold/60 uppercase tracking-widest block mb-1">الخيار الأساسي الفاخر</span>
                   <h3 className="font-primary text-3xl font-light text-white tracking-wide">
                     Launch
                   </h3>
@@ -151,13 +154,13 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                   المكونات المشمولة بالكامل:
                 </span>
                 
-                <ul className="space-y-4">
+                <ul className="space-y-4" dir="ltr">
                   {[
-                    "Luxury Website (موقع ويب فاخر)",
-                    "SEO (تحسين محركات البحث)",
-                    "Google Business Profile (تهيئة الملف التجاري)"
+                    "Luxury Website",
+                    "SEO",
+                    "Google Business Profile"
                   ].map((service, idx) => (
-                    <li key={idx} className="flex items-center gap-3 justify-start flex-row-reverse text-right group-hover:translate-x-[-2px] transition-transform duration-300">
+                    <li key={idx} className="flex items-center gap-3 justify-start text-left group-hover:translate-x-[-2px] transition-transform duration-300">
                       <span className="text-xs text-ivory/80 font-light">{service}</span>
                       <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold border border-gold/20">
                         <Check size={10} className="stroke-[3]" />
@@ -168,9 +171,9 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
               </div>
             </div>
 
-            <div className="mt-12 pt-6 border-t border-white/5">
+            <div className="mt-auto pt-6 border-t border-white/5">
               <MagneticButton 
-                onClick={() => onOpenConsultation("Launch Package")}
+                onClick={handleWhatsAppClick}
                 className="w-full"
               >
                 <div className="w-full py-4 rounded-lg bg-white/5 border border-white/10 hover:border-gold/40 hover:bg-gold hover:text-black transition-all duration-300 text-center font-primary text-[10px] uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer text-white hover:text-black shadow-md">
@@ -188,21 +191,15 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.15 }}
             whileHover={{ scale: 1.03, borderColor: "rgba(212, 175, 55, 0.8)" }}
-            className="relative rounded-2xl border-2 border-gold bg-gradient-to-b from-[#090909] to-black p-10 flex flex-col justify-between overflow-hidden transition-all duration-500 text-right shadow-[0_0_50px_rgba(212,175,55,0.18)] z-20 md:-translate-y-4 lg:scale-[1.04] group hover:shadow-[0_25px_60px_rgba(212,175,55,0.25)]"
+            className="relative rounded-2xl border-2 border-gold bg-gradient-to-b from-[#090909] to-black p-6 sm:p-8 lg:p-10 flex flex-col justify-between overflow-hidden transition-all duration-500 text-right shadow-[0_0_50px_rgba(212,175,55,0.18)] z-20 md:-translate-y-4 lg:scale-[1.04] group hover:shadow-[0_25px_60px_rgba(212,175,55,0.25)]"
           >
             {/* Exquisite Glowing Halo behind Badge */}
             <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-gold/[0.04] to-transparent pointer-events-none" />
 
-            {/* Luxurious Floating Badge */}
-            <div className="absolute top-5 left-5 flex items-center gap-1.5 rounded-full bg-gold/20 border border-gold/50 px-4 py-2 font-primary text-[9px] tracking-widest text-gold font-bold shadow-lg shadow-gold/20 backdrop-blur-md animate-pulse">
-              <Sparkles size={10} className="text-gold" />
-              <span>الأكثر اختيارًا</span>
-            </div>
 
             <div className="space-y-8">
               <div className="flex justify-between items-start flex-row-reverse">
                 <div>
-                  <span className="text-[10px] font-primary text-gold uppercase tracking-widest block mb-1 font-semibold">تسريع وتنمية الحجوزات</span>
                   <h3 className="font-primary text-3xl font-normal text-white tracking-wide">
                     Growth
                   </h3>
@@ -228,15 +225,15 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                   المكونات المشمولة بالكامل:
                 </span>
                 
-                <ul className="space-y-4">
+                <ul className="space-y-4" dir="ltr">
                   {[
-                    "Luxury Website (موقع ويب فاخر)",
-                    "Guest Portal (بوابة النزلاء الرقمية)",
-                    "Marketing (التسويق الفندقي الاستراتيجي)",
-                    "SEO (تحسين محركات البحث المحترف)",
-                    "Google Business Profile (الظهور الفائق على الخرائط)"
+                    "Luxury Website",
+                    "Guest Portal",
+                    "Marketing",
+                    "SEO",
+                    "Google Business Profile"
                   ].map((service, idx) => (
-                    <li key={idx} className="flex items-center gap-3 justify-start flex-row-reverse text-right group-hover:translate-x-[-2px] transition-transform duration-300">
+                    <li key={idx} className="flex items-center gap-3 justify-start text-left group-hover:translate-x-[-2px] transition-transform duration-300">
                       <span className="text-xs text-white/95 font-medium">{service}</span>
                       <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold text-black shadow-md shadow-gold/20 border border-gold/20">
                         <Check size={10} className="stroke-[3]" />
@@ -247,13 +244,13 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
               </div>
             </div>
 
-            <div className="mt-12 pt-6">
+            <div className="mt-auto pt-6">
               <MagneticButton 
-                onClick={() => onOpenConsultation("Growth Package")}
+                onClick={handleWhatsAppClick}
                 className="w-full"
               >
                 <div className="w-full py-4.5 rounded-lg bg-gold hover:bg-gold-light text-black transition-all duration-300 text-center font-primary text-[10px] uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer shadow-xl shadow-gold/20 hover:scale-[1.01]">
-                  <span>ابدأ رحلة النمو</span>
+                  <span> ابدأ الآن </span>
                   <ArrowLeft size={12} className="transition-transform group-hover:-translate-x-1" />
                 </div>
               </MagneticButton>
@@ -267,7 +264,7 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
             whileHover={{ y: -8, borderColor: "rgba(212, 175, 55, 0.5)" }}
-            className="relative rounded-2xl border border-gold/30 bg-gradient-to-b from-[#111111] via-[#080808] to-[#040404] backdrop-blur-xl p-9 flex flex-col justify-between overflow-hidden transition-all duration-500 text-right group shadow-2xl hover:shadow-[0_30px_70px_rgba(212,175,55,0.12)]"
+            className="relative rounded-2xl border border-gold/30 bg-gradient-to-b from-[#111111] via-[#080808] to-[#040404] backdrop-blur-xl p-6 sm:p-8 lg:p-9 flex flex-col justify-between overflow-hidden transition-all duration-500 text-right group shadow-2xl hover:shadow-[0_30px_70px_rgba(212,175,55,0.12)]"
           >
             {/* Animated champagne gold glow */}
             <div className="absolute top-0 right-0 w-40 h-40 bg-gold/15 rounded-full blur-[80px] pointer-events-none group-hover:bg-gold/25 transition-all duration-500" />
@@ -275,16 +272,11 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
             {/* Exquisite Pulsing Edge Highlighting */}
             <div className="absolute inset-0 rounded-2xl p-[1px] bg-gradient-to-b from-gold/30 via-white/5 to-gold/30 pointer-events-none group-hover:from-gold/50 transition-all duration-500" />
 
-            {/* Premium luxury badge */}
-            <div className="absolute top-5 left-5 flex items-center gap-1.5 rounded-full bg-white/5 border border-gold/40 px-4 py-2 font-primary text-[9px] tracking-widest text-gold font-bold backdrop-blur-md">
-              <Award size={10} className="text-gold animate-bounce" />
-              <span>الحل المتكامل النخبوّي</span>
-            </div>
+          
 
             <div className="space-y-8 relative z-10">
               <div className="flex justify-between items-start flex-row-reverse">
                 <div>
-                  <span className="text-[10px] font-primary text-gold/80 uppercase tracking-widest block mb-1 font-semibold">السيادة والتحول الشامل</span>
                   <h3 className="font-primary text-3xl font-light text-white tracking-wide">
                     Elite
                   </h3>
@@ -310,18 +302,18 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
                   المكونات المشمولة بالكامل:
                 </span>
                 
-                <div className="max-h-[220px] overflow-y-auto pr-1 space-y-3.5 custom-scrollbar">
+                <div className="max-h-[220px] overflow-y-auto pr-1 space-y-3.5 custom-scrollbar" dir="ltr">
                   {[
-                    "Luxury Website (موقع ويب فاخر)",
-                    "Guest Portal (بوابة النزلاء الرقمية)",
-                    "Hotel Dashboard (لوحة التحكم الشاملة)",
-                    "Marketing (التسويق الفندقي الرقمي)",
-                    "SEO (السيادة الفائقة لمحركات البحث)",
-                    "Google Business Profile (التهيئة الكاملة)",
-                    "Analytics (لوحة تحليلات وإحصاءات الأرباح)",
-                    "Monthly Consulting (استشارات ربع شهرية مباشرة)"
+                    "Luxury Website",
+                    "Guest Portal",
+                    "Hotel Dashboard",
+                    "Marketing",
+                    "SEO",
+                    "Google Business Profile",
+                    "Analytics",
+                    "Monthly Consulting"
                   ].map((service, idx) => (
-                    <div key={idx} className="flex items-center gap-3 justify-start flex-row-reverse text-right group-hover:translate-x-[-2px] transition-transform duration-300">
+                    <div key={idx} className="flex items-center gap-3 justify-start text-left group-hover:translate-x-[-2px] transition-transform duration-300">
                       <span className="text-xs text-white font-light">{service}</span>
                       <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/15 text-gold border border-gold/30">
                         <Check size={10} className="stroke-[3]" />
@@ -332,26 +324,16 @@ export default function Pricing({ onOpenConsultation }: PricingProps) {
               </div>
             </div>
 
-            <div className="mt-12 pt-6 border-t border-white/5 space-y-4 relative z-10">
+            <div className="mt-auto pt-6 border-t border-white/5 space-y-4 relative z-10">
               <MagneticButton 
-                onClick={() => onOpenConsultation("Elite Package")}
+                onClick={handleWhatsAppClick}
                 className="w-full"
               >
                 <div className="w-full py-4 rounded-lg bg-gold hover:bg-gold-light text-black transition-all duration-300 text-center font-primary text-[10px] uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-gold/10 hover:scale-[1.01]">
-                  <span>احجز استشارة مجانية</span>
+                  <span> ابدأ الآن </span>
                   <ArrowLeft size={12} className="transition-transform group-hover:-translate-x-1" />
                 </div>
               </MagneticButton>
-
-              <a
-                href="https://wa.me/201070853978"
-                target="_blank"
-                rel="noreferrer"
-                className="w-full py-3.5 rounded-lg border border-emerald-500/20 bg-emerald-500/5 hover:border-emerald-500/40 hover:bg-emerald-500/10 hover:text-emerald-400 font-primary text-[10px] tracking-widest transition-all duration-300 flex items-center justify-center gap-2 font-bold"
-              >
-                <MessageSquare size={13} className="text-emerald-500" />
-                <span>تحدث معنا عبر واتساب</span>
-              </a>
             </div>
           </motion.div>
 
